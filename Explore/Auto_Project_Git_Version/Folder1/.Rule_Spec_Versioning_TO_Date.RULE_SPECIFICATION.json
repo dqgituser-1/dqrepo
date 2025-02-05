@@ -1,0 +1,27 @@
+{
+  "objectInfo" : {
+    "id" : "k8qb6RYEbgXkV7KhRxwo6a",
+    "name" : "Rule_Spec_Versioning_TO_Date",
+    "type" : "RULE_SPECIFICATION",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 1,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "k8qb6RYEbgXkV7KhRxwo6a"
+      },
+      "contextAttributes" : [ ],
+      "additionalInfo" : {
+        "description" : "Rule_Spec_Versioning_TO_Date",
+        "contentType" : "Binary",
+        "documentState" : "VALID"
+      }
+    }
+  },
+  "dataFileExtension" : "json",
+  "updateTime" : "2025-02-05T08:56:18.462Z",
+  "objectRefs" : [ ],
+  "readableFileExtension" : null,
+  "readableFilePresent" : false
+}
