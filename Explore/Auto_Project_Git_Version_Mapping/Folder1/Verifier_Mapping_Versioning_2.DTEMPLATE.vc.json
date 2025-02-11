@@ -1,0 +1,352 @@
+{
+  "content" : {
+    "allowMaxFieldLength" : "false",
+    "name" : "Verifier_Mapping_Versioning_2",
+    "links" : [
+      {
+        "link" : "Verifier -> Target",
+        "groupLink" : "MappletOutputTx_Output -> DefaultGroup"
+      },
+      {
+        "link" : "Source -> Verifier",
+        "groupLink" : "DefaultGroup -> Input group:"
+      }
+    ],
+    "transformations" : [
+      {
+        "createTime" : "2019-09-13T08:28:53.472Z",
+        "name" : "Target",
+        "advancedProperties" : [
+          {
+            "name" : "Forward Rejected Rows",
+            "value" : "true"
+          }
+        ],
+        "groups" : [
+          {
+            "input" : "true",
+            "name" : "DefaultGroup",
+            "output" : "false",
+            "rules" : [
+              {
+                "bulkRename" : "false",
+                "include" : "true"
+              }
+            ]
+          }
+        ],
+        "sessionProperties" : [
+          {
+            "name" : "Append if Exists",
+            "value" : "NO"
+          },
+          {
+            "name" : "Header Options",
+            "value" : "Output Field Names"
+          },
+          {
+            "name" : "Output Type",
+            "value" : "File"
+          }
+        ],
+        "createTarget" : "true",
+        "fieldMappingMode" : "BY_NAME",
+        "inputSorted" : "false",
+        "schemaProviderType" : "SELECTED_OBJECT",
+        "updateColumns" : null,
+        "useLabels" : "false",
+        "useSequenceFields" : "false",
+        "dataAdapter" : {
+          "connectionId" : "saas:@i18ZBgrDoy0gLgh4omSiKo",
+          "connectionName" : "Verifier_target_connection",
+          "excludeDynamicFileNameField" : "false",
+          "objectType" : "SINGLE",
+          "typeSystem" : "CSVFile",
+          "useDynamicFileName" : "false",
+          "bulkOptions" : {
+            "hardDelete" : "false",
+            "maxRowsPerRequest" : 0,
+            "monitorBulk" : "false",
+            "monitorBulkV2" : "false",
+            "pkChunkingEnabled" : "false",
+            "pkChunkingSize" : 0,
+            "serialMode" : "false",
+            "useBulkApi" : "false",
+            "useBulkApiV2" : "false"
+          },
+          "object" : {
+            "name" : "TC110.csv",
+            "label" : "TC110.csv",
+            "path" : "TC110.csv",
+            "retainMetadata" : "false",
+            "fileAttrs" : {
+              "consecutiveDelimiter" : "false",
+              "delimiter" : ",",
+              "firstDataRow" : 2,
+              "firstDataRowAsHeader" : "false",
+              "headerLineNo" : 1,
+              "multiDelimitersAsAnd" : "true",
+              "rowDelimiter" : 0,
+              "textQualifier" : "\""
+            }
+          },
+          "writeOptions" : {
+            "batchSize" : 0,
+            "bulkApi" : "false",
+            "handleDecimalRoundOff" : "false",
+            "handleSpecialChars" : "false",
+            "operations" : [
+              "Insert"
+            ],
+            "setFieldsToNull" : "false",
+            "truncate" : "false",
+            "useErrorFile" : "false",
+            "useExactSrcNames" : "false",
+            "useSuccessFile" : "false"
+          }
+        }
+      },
+      {
+        "createTime" : "2019-09-13T08:29:05.447Z",
+        "name" : "Verifier",
+        "groups" : [
+          {
+            "input" : "true",
+            "name" : "Input group:",
+            "output" : "false",
+            "rules" : [
+              {
+                "bulkRename" : "false",
+                "include" : "true"
+              }
+            ]
+          },
+          {
+            "input" : "false",
+            "name" : "MappletOutputTx_Output",
+            "output" : "true"
+          }
+        ],
+        "active" : "false",
+        "verifierAssetDocumentId" : "17R9jUHl1xglNrSJv94nEk",
+        "verifierAssetId" : "@bfff8ZOHgEYbSUEukVK0KU",
+        "inputGroups" : [
+          {
+            "name" : "Input group:",
+            "fieldMappingMode" : "MANUAL",
+            "fieldMapping" : {
+              "fields" : [
+                {
+                  "name" : "Address_Line1_Address_Line2_Address_Line3_City",
+                  "precision" : 0,
+                  "scale" : 0,
+                  "txField" : {
+                    "name" : "Formatted_Address_Lines_1"
+                  }
+                },
+                {
+                  "name" : "Country",
+                  "precision" : 0,
+                  "scale" : 0,
+                  "txField" : {
+                    "name" : "Country_1"
+                  }
+                }
+              ]
+            }
+          }
+        ],
+        "inputFields" : {
+          "fieldList" : [
+            {
+              "name" : "Formatted_Address_Lines_1",
+              "platformType" : {
+                "name" : "string"
+              },
+              "precision" : 128,
+              "scale" : 0
+            },
+            {
+              "name" : "Country_1",
+              "platformType" : {
+                "name" : "string"
+              },
+              "precision" : 50,
+              "scale" : 0
+            }
+          ]
+        },
+        "outputFields" : {
+          "fieldList" : [
+            {
+              "name" : "Country_Name_1",
+              "platformType" : {
+                "name" : "string"
+              },
+              "precision" : 50,
+              "scale" : 0
+            },
+            {
+              "name" : "Formatted_Address_Lines_1",
+              "platformType" : {
+                "name" : "string"
+              },
+              "precision" : 128,
+              "scale" : 0
+            },
+            {
+              "name" : "Verification_Status_Code",
+              "platformType" : {
+                "name" : "string"
+              },
+              "precision" : 4,
+              "scale" : 0
+            },
+            {
+              "name" : "Match_Percentage",
+              "platformType" : {
+                "name" : "string"
+              },
+              "precision" : 6,
+              "scale" : 0
+            },
+            {
+              "name" : "Geo_Coding_Accuracy_Code",
+              "platformType" : {
+                "name" : "string"
+              },
+              "precision" : 10,
+              "scale" : 0
+            },
+            {
+              "name" : "Geo_Coordinates",
+              "platformType" : {
+                "name" : "string"
+              },
+              "precision" : 60,
+              "scale" : 0
+            },
+            {
+              "name" : "Geo_Coordinates_Latitude",
+              "platformType" : {
+                "name" : "string"
+              },
+              "precision" : 30,
+              "scale" : 0
+            },
+            {
+              "name" : "Geo_Coordinates_Longitude",
+              "platformType" : {
+                "name" : "string"
+              },
+              "precision" : 30,
+              "scale" : 0
+            }
+          ]
+        }
+      },
+      {
+        "createTime" : "2019-11-27T08:47:19.982Z",
+        "name" : "Source",
+        "groups" : [
+          {
+            "input" : "false",
+            "name" : "DefaultGroup",
+            "output" : "true"
+          }
+        ],
+        "generateFilenamePort" : "false",
+        "useLabels" : "false",
+        "useSequenceFields" : "false",
+        "fields" : [
+          {
+            "adapterField" : {
+              "name" : "Address_Line1_Address_Line2_Address_Line3_City"
+            },
+            "name" : "Address_Line1_Address_Line2_Address_Line3_City",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "Country"
+            },
+            "name" : "Country",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          }
+        ],
+        "dataAdapter" : {
+          "connectionId" : "saas:@37bzzfJu6FBhEEHUL8yAki",
+          "connectionName" : "Verifier_source_connection",
+          "excludeDynamicFileNameField" : "false",
+          "objectType" : "SINGLE",
+          "typeSystem" : "CSVFile",
+          "useDynamicFileName" : "false",
+          "object" : {
+            "name" : "AFG_for_multi.csv",
+            "label" : "AFG_for_multi.csv",
+            "path" : "AFG_for_multi.csv",
+            "retainMetadata" : "false",
+            "fields" : [
+              {
+                "name" : "Address_Line1_Address_Line2_Address_Line3_City",
+                "fieldType" : "UNDEFINED",
+                "label" : "Address_Line1_Address_Line2_Address_Line3_City",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "AFG_for_multi.csv"
+                  }
+                ]
+              },
+              {
+                "name" : "Country",
+                "fieldType" : "UNDEFINED",
+                "label" : "Country",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "AFG_for_multi.csv"
+                  }
+                ]
+              }
+            ],
+            "fileAttrs" : {
+              "consecutiveDelimiter" : "false",
+              "delimiter" : "|",
+              "firstDataRow" : 2,
+              "firstDataRowAsHeader" : "false",
+              "headerLineNo" : 1,
+              "multiDelimitersAsAnd" : "true",
+              "rowDelimiter" : 0,
+              "textQualifier" : "\""
+            }
+          },
+          "readOptions" : {
+            "commandType" : 0,
+            "descending" : "false",
+            "queryAll" : "false",
+            "rowLimit" : 0,
+            "selectDistinct" : "false"
+          }
+        }
+      }
+    ]
+  },
+  "vcsExportTime" : "2025-02-11 00:36:08 PST"
+}
