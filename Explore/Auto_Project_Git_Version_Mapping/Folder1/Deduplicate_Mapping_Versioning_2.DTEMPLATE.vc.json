@@ -1,0 +1,783 @@
+{
+  "content" : {
+    "allowMaxFieldLength" : "false",
+    "name" : "Deduplicate_Mapping_Versioning_2",
+    "links" : [
+      {
+        "link" : "Deduplicate -> Target",
+        "groupLink" : "MappletOutputTx_Output -> DefaultGroup"
+      },
+      {
+        "link" : "Source -> Deduplicate",
+        "groupLink" : "DefaultGroup -> Input group:"
+      }
+    ],
+    "transformations" : [
+      {
+        "createTime" : "2020-04-01T05:18:58.691Z",
+        "name" : "Source",
+        "advancedProperties" : [
+          {
+            "name" : "Tracing Level",
+            "value" : "Normal"
+          },
+          {
+            "name" : "Output is deterministic",
+            "value" : "false"
+          }
+        ],
+        "groups" : [
+          {
+            "input" : "false",
+            "name" : "DefaultGroup",
+            "output" : "true"
+          }
+        ],
+        "generateFilenamePort" : "false",
+        "useLabels" : "false",
+        "useSequenceFields" : "false",
+        "fields" : [
+          {
+            "adapterField" : {
+              "name" : "SequenceId"
+            },
+            "name" : "SequenceId",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "GroupKey"
+            },
+            "name" : "GroupKey",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "Identity"
+            },
+            "name" : "Identity",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "Company_Name"
+            },
+            "name" : "Company_Name",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "Address_Part1"
+            },
+            "name" : "Address_Part1",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "Address_Part2"
+            },
+            "name" : "Address_Part2",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "Address_Part2_1"
+            },
+            "name" : "Address_Part2_1",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "Code"
+            },
+            "name" : "Code",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "Organization_Name"
+            },
+            "name" : "Organization_Name",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "Person_Name"
+            },
+            "name" : "Person_Name",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "Title"
+            },
+            "name" : "Title",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "Phone"
+            },
+            "name" : "Phone",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "Email"
+            },
+            "name" : "Email",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          }
+        ],
+        "dataAdapter" : {
+          "connectionId" : "saas:@j3RVoW3aH6GduDF907oo4e",
+          "connectionName" : "Deduplicate_source_connection",
+          "excludeDynamicFileNameField" : "false",
+          "objectType" : "SINGLE",
+          "typeSystem" : "CSVFile",
+          "useDynamicFileName" : "false",
+          "object" : {
+            "name" : "src_dedup_9646.csv",
+            "label" : "src_dedup_9646.csv",
+            "path" : "src_dedup_9646.csv",
+            "retainMetadata" : "false",
+            "fields" : [
+              {
+                "name" : "SequenceId",
+                "fieldType" : "UNDEFINED",
+                "label" : "SequenceId",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "src_dedup_9646.csv"
+                  }
+                ]
+              },
+              {
+                "name" : "GroupKey",
+                "fieldType" : "UNDEFINED",
+                "label" : "GroupKey",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "src_dedup_9646.csv"
+                  }
+                ]
+              },
+              {
+                "name" : "Identity",
+                "fieldType" : "UNDEFINED",
+                "label" : "Identity",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "src_dedup_9646.csv"
+                  }
+                ]
+              },
+              {
+                "name" : "Company_Name",
+                "fieldType" : "UNDEFINED",
+                "label" : "Company_Name",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "src_dedup_9646.csv"
+                  }
+                ]
+              },
+              {
+                "name" : "Address_Part1",
+                "fieldType" : "UNDEFINED",
+                "label" : "Address_Part1",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "src_dedup_9646.csv"
+                  }
+                ]
+              },
+              {
+                "name" : "Address_Part2",
+                "fieldType" : "UNDEFINED",
+                "label" : "Address_Part2",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "src_dedup_9646.csv"
+                  }
+                ]
+              },
+              {
+                "name" : "Address_Part2_1",
+                "fieldType" : "UNDEFINED",
+                "label" : "Address_Part2_1",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "src_dedup_9646.csv"
+                  }
+                ]
+              },
+              {
+                "name" : "Code",
+                "fieldType" : "UNDEFINED",
+                "label" : "Code",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "src_dedup_9646.csv"
+                  }
+                ]
+              },
+              {
+                "name" : "Organization_Name",
+                "fieldType" : "UNDEFINED",
+                "label" : "Organization_Name",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "src_dedup_9646.csv"
+                  }
+                ]
+              },
+              {
+                "name" : "Person_Name",
+                "fieldType" : "UNDEFINED",
+                "label" : "Person_Name",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "src_dedup_9646.csv"
+                  }
+                ]
+              },
+              {
+                "name" : "Title",
+                "fieldType" : "UNDEFINED",
+                "label" : "Title",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "src_dedup_9646.csv"
+                  }
+                ]
+              },
+              {
+                "name" : "Phone",
+                "fieldType" : "UNDEFINED",
+                "label" : "Phone",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "src_dedup_9646.csv"
+                  }
+                ]
+              },
+              {
+                "name" : "Email",
+                "fieldType" : "UNDEFINED",
+                "label" : "Email",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "src_dedup_9646.csv"
+                  }
+                ]
+              }
+            ],
+            "fileAttrs" : {
+              "consecutiveDelimiter" : "false",
+              "delimiter" : ",",
+              "firstDataRow" : 2,
+              "firstDataRowAsHeader" : "false",
+              "headerLineNo" : 1,
+              "multiDelimitersAsAnd" : "true",
+              "rowDelimiter" : 0,
+              "textQualifier" : "\""
+            }
+          },
+          "readOptions" : {
+            "commandType" : 0,
+            "descending" : "false",
+            "queryAll" : "false",
+            "rowLimit" : 0,
+            "selectDistinct" : "false"
+          }
+        }
+      },
+      {
+        "createTime" : "2020-04-01T05:18:58.695Z",
+        "name" : "Target",
+        "advancedProperties" : [
+          {
+            "name" : "Forward Rejected Rows",
+            "value" : "true"
+          }
+        ],
+        "groups" : [
+          {
+            "input" : "true",
+            "name" : "DefaultGroup",
+            "output" : "false",
+            "rules" : [
+              {
+                "bulkRename" : "false",
+                "include" : "true"
+              }
+            ]
+          }
+        ],
+        "sessionProperties" : [
+          {
+            "name" : "Append if Exists",
+            "value" : "NO"
+          },
+          {
+            "name" : "Header Options",
+            "value" : "Output Field Names"
+          },
+          {
+            "name" : "Output Type",
+            "value" : "File"
+          }
+        ],
+        "createTarget" : "true",
+        "fieldMappingMode" : "BY_NAME",
+        "inputSorted" : "false",
+        "schemaProviderType" : "SELECTED_OBJECT",
+        "updateColumns" : null,
+        "useLabels" : "false",
+        "useSequenceFields" : "false",
+        "dataAdapter" : {
+          "connectionId" : "saas:@l2hnIB4FwQkivsRRlPIwwz",
+          "connectionName" : "Deduplicate_target_connection",
+          "excludeDynamicFileNameField" : "false",
+          "objectType" : "SINGLE",
+          "typeSystem" : "CSVFile",
+          "useDynamicFileName" : "false",
+          "bulkOptions" : {
+            "hardDelete" : "false",
+            "maxRowsPerRequest" : 0,
+            "monitorBulk" : "false",
+            "monitorBulkV2" : "false",
+            "pkChunkingEnabled" : "false",
+            "pkChunkingSize" : 0,
+            "serialMode" : "false",
+            "useBulkApi" : "false",
+            "useBulkApiV2" : "false"
+          },
+          "object" : {
+            "name" : "tgt_dedup_9646.csv",
+            "label" : "tgt_dedup_9646.csv",
+            "path" : "tgt_dedup_9646.csv",
+            "retainMetadata" : "false",
+            "fileAttrs" : {
+              "consecutiveDelimiter" : "false",
+              "delimiter" : ",",
+              "firstDataRow" : 2,
+              "firstDataRowAsHeader" : "false",
+              "headerLineNo" : 1,
+              "multiDelimitersAsAnd" : "true",
+              "rowDelimiter" : 0,
+              "textQualifier" : "\""
+            }
+          },
+          "writeOptions" : {
+            "batchSize" : 0,
+            "bulkApi" : "false",
+            "handleDecimalRoundOff" : "false",
+            "handleSpecialChars" : "true",
+            "operations" : [
+              "Insert"
+            ],
+            "setFieldsToNull" : "false",
+            "truncate" : "false",
+            "useErrorFile" : "false",
+            "useExactSrcNames" : "false",
+            "useSuccessFile" : "false"
+          }
+        }
+      },
+      {
+        "createTime" : "2020-04-01T05:19:44.363Z",
+        "name" : "Deduplicate",
+        "groups" : [
+          {
+            "input" : "true",
+            "name" : "Input group:",
+            "output" : "false",
+            "rules" : [
+              {
+                "bulkRename" : "false",
+                "include" : "true"
+              }
+            ]
+          },
+          {
+            "input" : "false",
+            "name" : "MappletOutputTx_Output",
+            "output" : "true"
+          }
+        ],
+        "assetId" : "@aqrEqMP1ikEg1x6SmY2W2w",
+        "inputGroups" : [
+          {
+            "name" : "Input group:",
+            "fieldMappingMode" : "MANUAL",
+            "fieldMapping" : {
+              "fields" : [
+                {
+                  "name" : "SequenceId",
+                  "precision" : 0,
+                  "scale" : 0,
+                  "txField" : {
+                    "name" : "SequenceId"
+                  }
+                },
+                {
+                  "name" : "GroupKey",
+                  "precision" : 0,
+                  "scale" : 0,
+                  "txField" : {
+                    "name" : "GroupKey"
+                  }
+                },
+                {
+                  "name" : "Organization_Name",
+                  "precision" : 0,
+                  "scale" : 0,
+                  "txField" : {
+                    "name" : "Organization_Name"
+                  }
+                },
+                {
+                  "name" : "Company_Name",
+                  "precision" : 0,
+                  "scale" : 0,
+                  "txField" : {
+                    "name" : "Company_Name"
+                  }
+                },
+                {
+                  "name" : "Person_Name",
+                  "precision" : 0,
+                  "scale" : 0,
+                  "txField" : {
+                    "name" : "Person_Name"
+                  }
+                }
+              ]
+            }
+          }
+        ],
+        "inputFields" : {
+          "fieldList" : [
+            {
+              "name" : "SequenceId",
+              "platformType" : {
+                "name" : "bigint"
+              },
+              "precision" : 19,
+              "scale" : 0,
+              "fieldConstraint" : "OPTIONAL"
+            },
+            {
+              "name" : "GroupKey",
+              "platformType" : {
+                "name" : "string"
+              },
+              "precision" : 30,
+              "scale" : 0,
+              "fieldConstraint" : "MANDATORY"
+            },
+            {
+              "name" : "Organization_Name",
+              "platformType" : {
+                "name" : "string"
+              },
+              "precision" : 80,
+              "scale" : 0,
+              "fieldConstraint" : "REQUIRED"
+            },
+            {
+              "name" : "Company_Name",
+              "platformType" : {
+                "name" : "string"
+              },
+              "precision" : 80,
+              "scale" : 0,
+              "fieldConstraint" : "REQUIRED"
+            },
+            {
+              "name" : "Person_Name",
+              "platformType" : {
+                "name" : "string"
+              },
+              "precision" : 80,
+              "scale" : 0,
+              "fieldConstraint" : "MANDATORY"
+            },
+            {
+              "name" : "Id",
+              "platformType" : {
+                "name" : "string"
+              },
+              "precision" : 80,
+              "scale" : 0,
+              "fieldConstraint" : "OPTIONAL"
+            },
+            {
+              "name" : "Attribute1",
+              "platformType" : {
+                "name" : "string"
+              },
+              "precision" : 80,
+              "scale" : 0,
+              "fieldConstraint" : "OPTIONAL"
+            },
+            {
+              "name" : "Attribute2",
+              "platformType" : {
+                "name" : "string"
+              },
+              "precision" : 80,
+              "scale" : 0,
+              "fieldConstraint" : "OPTIONAL"
+            },
+            {
+              "name" : "Code",
+              "platformType" : {
+                "name" : "string"
+              },
+              "precision" : 80,
+              "scale" : 0,
+              "fieldConstraint" : "OPTIONAL"
+            }
+          ]
+        },
+        "outputFields" : {
+          "fieldList" : [
+            {
+              "name" : "Out_ClusterId",
+              "platformType" : {
+                "name" : "string"
+              },
+              "precision" : 30,
+              "scale" : 0
+            },
+            {
+              "name" : "Out_ClusterSize",
+              "platformType" : {
+                "name" : "integer"
+              },
+              "precision" : 10,
+              "scale" : 0
+            },
+            {
+              "name" : "Out_RowId",
+              "platformType" : {
+                "name" : "string"
+              },
+              "precision" : 25,
+              "scale" : 0
+            },
+            {
+              "name" : "Out_DriverId",
+              "platformType" : {
+                "name" : "string"
+              },
+              "precision" : 25,
+              "scale" : 0
+            },
+            {
+              "name" : "Out_DriverScore",
+              "platformType" : {
+                "name" : "double"
+              },
+              "precision" : 15,
+              "scale" : 2
+            },
+            {
+              "name" : "Out_LinkId",
+              "platformType" : {
+                "name" : "string"
+              },
+              "precision" : 25,
+              "scale" : 0
+            },
+            {
+              "name" : "Out_LinkScore",
+              "platformType" : {
+                "name" : "double"
+              },
+              "precision" : 15,
+              "scale" : 2
+            },
+            {
+              "name" : "Out_Organization_Name",
+              "platformType" : {
+                "name" : "string"
+              },
+              "precision" : 80,
+              "scale" : 0
+            },
+            {
+              "name" : "Out_Company_Name",
+              "platformType" : {
+                "name" : "string"
+              },
+              "precision" : 80,
+              "scale" : 0
+            },
+            {
+              "name" : "Out_Person_Name",
+              "platformType" : {
+                "name" : "string"
+              },
+              "precision" : 80,
+              "scale" : 0
+            },
+            {
+              "name" : "Out_Id",
+              "platformType" : {
+                "name" : "string"
+              },
+              "precision" : 80,
+              "scale" : 0
+            },
+            {
+              "name" : "Out_Attribute1",
+              "platformType" : {
+                "name" : "string"
+              },
+              "precision" : 80,
+              "scale" : 0
+            },
+            {
+              "name" : "Out_Attribute2",
+              "platformType" : {
+                "name" : "string"
+              },
+              "precision" : 80,
+              "scale" : 0
+            },
+            {
+              "name" : "Out_Code",
+              "platformType" : {
+                "name" : "string"
+              },
+              "precision" : 80,
+              "scale" : 0
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "vcsExportTime" : "2025-02-11 00:37:20 PST"
+}
