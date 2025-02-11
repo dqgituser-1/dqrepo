@@ -1,0 +1,27 @@
+{
+  "objectInfo" : {
+    "id" : "9TsHIzEOeF9hPyn6myJ0YL",
+    "name" : "Deduplicate_9646_2",
+    "type" : "DEDUPLICATE",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 1,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "9TsHIzEOeF9hPyn6myJ0YL"
+      },
+      "contextAttributes" : [ ],
+      "additionalInfo" : {
+        "description" : "test desc",
+        "contentType" : "Binary",
+        "documentState" : "VALID"
+      }
+    }
+  },
+  "dataFileExtension" : "json",
+  "updateTime" : "2025-02-11T08:43:21.237Z",
+  "objectRefs" : [ ],
+  "readableFileExtension" : null,
+  "readableFilePresent" : false
+}
