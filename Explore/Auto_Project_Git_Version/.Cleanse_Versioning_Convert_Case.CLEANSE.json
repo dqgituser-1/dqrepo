@@ -1,0 +1,27 @@
+{
+  "objectInfo" : {
+    "id" : "5kqgxfhzSUwhqLDU4L34Um",
+    "name" : "Cleanse_Versioning_Convert_Case",
+    "type" : "CLEANSE",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 1,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "5kqgxfhzSUwhqLDU4L34Um"
+      },
+      "contextAttributes" : [ ],
+      "additionalInfo" : {
+        "description" : null,
+        "contentType" : "Binary",
+        "documentState" : "VALID"
+      }
+    }
+  },
+  "dataFileExtension" : "json",
+  "updateTime" : "2025-02-11T06:51:57.500Z",
+  "objectRefs" : [ ],
+  "readableFileExtension" : null,
+  "readableFilePresent" : false
+}
