@@ -1,0 +1,25 @@
+{
+  "objectInfo" : {
+    "id" : "9Q5KKkgc9cziSGsQ4MvAK3",
+    "name" : "Auto_Project_Git_Version_Mapping",
+    "type" : "Project",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 0,
+        "minor" : 0
+      },
+      "repoInfo" : null,
+      "contextAttributes" : [ ],
+      "additionalInfo" : {
+        "description" : "desc",
+        "contentType" : "Binary",
+        "documentState" : "COMPLETE"
+      }
+    }
+  },
+  "dataFileExtension" : "json",
+  "updateTime" : "2025-02-11T08:33:14.913Z",
+  "objectRefs" : [ ],
+  "readableFileExtension" : null,
+  "readableFilePresent" : false
+}

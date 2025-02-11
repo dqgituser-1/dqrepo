@@ -1,0 +1,90 @@
+{
+  "objectInfo" : {
+    "id" : "5GAx0D3fXWriRSsh0CrWkY",
+    "name" : "Cleanse_Mapping_Versioning",
+    "type" : "DTEMPLATE",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 0,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "0183RG1700000000001D"
+      },
+      "contextAttributes" : [ {
+        "name" : "id",
+        "value" : "@1"
+      } ],
+      "additionalInfo" : {
+        "description" : "Cleanse mapping",
+        "contentType" : "JSON",
+        "documentState" : "VALID"
+      }
+    }
+  },
+  "dataFileExtension" : "zip",
+  "updateTime" : "2025-02-11T08:33:14.912Z",
+  "objectRefs" : [ {
+    "id" : "2SXARNPSQj1lJYknSQ4RyZ",
+    "name" : "Cleanse_TC51",
+    "type" : "CLEANSE",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 1,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "2SXARNPSQj1lJYknSQ4RyZ"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : "Cannot open a Cleanse from the DI Explorer using the standard mechanisms which open in a new browser tab in the DQ Product",
+        "contentType" : "Binary",
+        "documentState" : "VALID"
+      }
+    },
+    "path" : "/Explore/Auto_Project_Git_Version/Folder2"
+  }, {
+    "id" : "dpTptb9DrySiGt2aNlrSwx",
+    "name" : "tgt_connection",
+    "type" : "Connection",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 0,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "0183RG0B000000000004"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : null,
+        "contentType" : "JSON",
+        "documentState" : "COMPLETE"
+      }
+    },
+    "path" : "/SYS"
+  }, {
+    "id" : "eiuq90jwusYdXyRqt7C38b",
+    "name" : "src_connection",
+    "type" : "Connection",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 0,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "0183RG0B00000000000B"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : null,
+        "contentType" : "JSON",
+        "documentState" : "COMPLETE"
+      }
+    },
+    "path" : "/SYS"
+  } ],
+  "readableFileExtension" : "json",
+  "readableFilePresent" : true
+}

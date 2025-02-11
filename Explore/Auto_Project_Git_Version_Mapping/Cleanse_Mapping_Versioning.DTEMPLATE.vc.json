@@ -1,0 +1,271 @@
+{
+  "content" : {
+    "description" : "Cleanse mapping",
+    "allowMaxFieldLength" : "false",
+    "name" : "Cleanse_Mapping_Versioning",
+    "links" : [
+      {
+        "link" : "Source -> Cleanse",
+        "groupLink" : "DefaultGroup -> Input group:"
+      },
+      {
+        "link" : "Cleanse -> Target",
+        "groupLink" : "MappletOutputTx_Output -> DefaultGroup"
+      }
+    ],
+    "parameters" : [
+      {
+        "input" : "true",
+        "output" : "false",
+        "precision" : 0,
+        "scale" : 0,
+        "allowRuntimeOverride" : "false",
+        "expressionVariable" : "false",
+        "name" : "cleanse_fm",
+        "anonymousType" : {
+          "allowPartialOverride" : "false"
+        }
+      }
+    ],
+    "transformations" : [
+      {
+        "createTime" : "2019-11-29T06:31:58.262Z",
+        "name" : "Source",
+        "advancedProperties" : [
+          {
+            "name" : "Tracing Level",
+            "value" : "Normal"
+          },
+          {
+            "name" : "Output is deterministic",
+            "value" : "false"
+          }
+        ],
+        "groups" : [
+          {
+            "input" : "false",
+            "name" : "DefaultGroup",
+            "output" : "true"
+          }
+        ],
+        "generateFilenamePort" : "false",
+        "useLabels" : "false",
+        "useSequenceFields" : "false",
+        "fields" : [
+          {
+            "adapterField" : {
+              "name" : "input_field"
+            },
+            "name" : "input_field",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          }
+        ],
+        "dataAdapter" : {
+          "connectionId" : "saas:@eiuq90jwusYdXyRqt7C38b",
+          "connectionName" : "src_connection",
+          "excludeDynamicFileNameField" : "false",
+          "objectType" : "SINGLE",
+          "typeSystem" : "CSVFile",
+          "useDynamicFileName" : "false",
+          "object" : {
+            "name" : "test_source_1.txt",
+            "label" : "test_source_1.txt",
+            "path" : "test_source_1.txt",
+            "retainMetadata" : "false",
+            "fields" : [
+              {
+                "name" : "input_field",
+                "fieldType" : "UNDEFINED",
+                "label" : "input_field",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "test_source_1.txt"
+                  }
+                ]
+              }
+            ],
+            "fileAttrs" : {
+              "consecutiveDelimiter" : "false",
+              "delimiter" : ",",
+              "firstDataRow" : 2,
+              "firstDataRowAsHeader" : "false",
+              "headerLineNo" : 1,
+              "multiDelimitersAsAnd" : "true",
+              "rowDelimiter" : 0,
+              "textQualifier" : "\""
+            }
+          },
+          "readOptions" : {
+            "commandType" : 0,
+            "descending" : "false",
+            "queryAll" : "false",
+            "rowLimit" : 0,
+            "selectDistinct" : "false"
+          }
+        }
+      },
+      {
+        "createTime" : "2019-11-29T06:31:58.271Z",
+        "name" : "Target",
+        "advancedProperties" : [
+          {
+            "name" : "Forward Rejected Rows",
+            "value" : "true"
+          }
+        ],
+        "groups" : [
+          {
+            "input" : "true",
+            "name" : "DefaultGroup",
+            "output" : "false",
+            "rules" : [
+              {
+                "bulkRename" : "false",
+                "include" : "true"
+              }
+            ]
+          }
+        ],
+        "sessionProperties" : [
+          {
+            "name" : "Append if Exists",
+            "value" : "NO"
+          },
+          {
+            "name" : "Header Options",
+            "value" : "Output Field Names"
+          },
+          {
+            "name" : "Output Type",
+            "value" : "File"
+          }
+        ],
+        "createTarget" : "true",
+        "fieldMappingMode" : "BY_NAME",
+        "inputSorted" : "false",
+        "schemaProviderType" : "SELECTED_OBJECT",
+        "updateColumns" : null,
+        "useLabels" : "false",
+        "useSequenceFields" : "false",
+        "dataAdapter" : {
+          "connectionId" : "saas:@dpTptb9DrySiGt2aNlrSwx",
+          "connectionName" : "tgt_connection",
+          "excludeDynamicFileNameField" : "false",
+          "objectType" : "SINGLE",
+          "typeSystem" : "CSVFile",
+          "useDynamicFileName" : "false",
+          "bulkOptions" : {
+            "hardDelete" : "false",
+            "maxRowsPerRequest" : 0,
+            "monitorBulk" : "false",
+            "monitorBulkV2" : "false",
+            "pkChunkingEnabled" : "false",
+            "pkChunkingSize" : 0,
+            "serialMode" : "false",
+            "useBulkApi" : "false",
+            "useBulkApiV2" : "false"
+          },
+          "object" : {
+            "name" : "Test_File",
+            "label" : "Test_File",
+            "path" : "Test_File",
+            "retainMetadata" : "false",
+            "fileAttrs" : {
+              "consecutiveDelimiter" : "false",
+              "delimiter" : ",",
+              "firstDataRow" : 2,
+              "firstDataRowAsHeader" : "false",
+              "headerLineNo" : 1,
+              "multiDelimitersAsAnd" : "true",
+              "rowDelimiter" : 0,
+              "textQualifier" : "\""
+            }
+          },
+          "writeOptions" : {
+            "batchSize" : 0,
+            "bulkApi" : "false",
+            "handleDecimalRoundOff" : "false",
+            "handleSpecialChars" : "false",
+            "operations" : [
+              "Insert"
+            ],
+            "setFieldsToNull" : "false",
+            "truncate" : "false",
+            "useErrorFile" : "false",
+            "useExactSrcNames" : "false",
+            "useSuccessFile" : "false"
+          }
+        }
+      },
+      {
+        "createTime" : "2019-11-29T06:32:26.720Z",
+        "name" : "Cleanse",
+        "advancedProperties" : [
+          {
+            "name" : "version",
+            "value" : "R37"
+          }
+        ],
+        "groups" : [
+          {
+            "input" : "true",
+            "name" : "Input group:",
+            "output" : "false",
+            "rules" : [
+              {
+                "bulkRename" : "false",
+                "include" : "true"
+              }
+            ]
+          },
+          {
+            "input" : "false",
+            "name" : "MappletOutputTx_Output",
+            "output" : "true"
+          }
+        ],
+        "assetId" : "@2SXARNPSQj1lJYknSQ4RyZ",
+        "inputGroups" : [
+          {
+            "name" : "Input group:",
+            "fieldMappingMode" : "BY_NAME"
+          }
+        ],
+        "inputFields" : {
+          "fieldList" : [
+            {
+              "name" : "input_field",
+              "platformType" : {
+                "name" : "string"
+              },
+              "precision" : 40,
+              "scale" : 0
+            }
+          ]
+        },
+        "outputFields" : {
+          "fieldList" : [
+            {
+              "name" : "input_field_Cleanse",
+              "platformType" : {
+                "name" : "string"
+              },
+              "precision" : 40,
+              "scale" : 0
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "vcsExportTime" : "2025-02-11 00:33:14 PST"
+}
