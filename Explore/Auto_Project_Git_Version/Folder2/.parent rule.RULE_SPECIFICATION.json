@@ -1,0 +1,67 @@
+{
+  "objectInfo" : {
+    "id" : "46DgIQtwv1mhiQOvhMMBq3",
+    "name" : "parent rule",
+    "type" : "RULE_SPECIFICATION",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 1,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "46DgIQtwv1mhiQOvhMMBq3"
+      },
+      "contextAttributes" : [ ],
+      "additionalInfo" : {
+        "description" : null,
+        "contentType" : "Binary",
+        "documentState" : "VALID"
+      }
+    }
+  },
+  "dataFileExtension" : "json",
+  "updateTime" : "2025-02-11T07:06:57.238Z",
+  "objectRefs" : [ {
+    "id" : "7EA3T8jWPuWk6Uh9PFTSWG",
+    "name" : "child rule",
+    "type" : "RULE_SPECIFICATION",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 1,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "7EA3T8jWPuWk6Uh9PFTSWG"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : "child rule",
+        "contentType" : "Binary",
+        "documentState" : "VALID"
+      }
+    },
+    "path" : "/Explore/Auto_Project_Git_Version/Folder2"
+  }, {
+    "id" : "9Q3xOk3PQ2zkLqOeCiioqv",
+    "name" : "ror_dictionary2",
+    "type" : "DICTIONARY",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 1,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "9Q3xOk3PQ2zkLqOeCiioqv"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : "example&&&!!!!",
+        "contentType" : "Binary",
+        "documentState" : "VALID"
+      }
+    },
+    "path" : "/Explore/Auto_Project_Git_Version/Folder2"
+  } ],
+  "readableFileExtension" : null,
+  "readableFilePresent" : false
+}
