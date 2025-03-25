@@ -16,14 +16,14 @@
         "value" : "@1"
       } ],
       "additionalInfo" : {
-        "description" : "A simple mapping using rule specification",
+        "description" : "A simple mapping using rule specification test desc change",
         "contentType" : "JSON",
         "documentState" : "VALID"
       }
     }
   },
   "dataFileExtension" : "zip",
-  "updateTime" : "2025-02-11T08:34:32.981Z",
+  "updateTime" : "2025-03-25T11:52:10.980Z",
   "objectRefs" : [ {
     "id" : "1k8Ak4MgF4Kjiw23ZQuF01",
     "name" : "source_connection",
