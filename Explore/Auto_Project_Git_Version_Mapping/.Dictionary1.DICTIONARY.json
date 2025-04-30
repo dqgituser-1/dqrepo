@@ -13,14 +13,14 @@
       },
       "contextAttributes" : [ ],
       "additionalInfo" : {
-        "description" : "",
+        "description" : "cities",
         "contentType" : "Binary",
         "documentState" : "VALID"
       }
     }
   },
   "dataFileExtension" : "json",
-  "updateTime" : "2025-04-30T09:53:54.308Z",
+  "updateTime" : "2025-04-30T09:55:00.746Z",
   "objectRefs" : [ ],
   "readableFileExtension" : null,
   "readableFilePresent" : false
