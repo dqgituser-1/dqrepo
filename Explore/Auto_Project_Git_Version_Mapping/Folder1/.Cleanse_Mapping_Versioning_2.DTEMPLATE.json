@@ -23,28 +23,8 @@
     }
   },
   "dataFileExtension" : "zip",
-  "updateTime" : "2025-05-07T06:38:33.329Z",
+  "updateTime" : "2025-05-07T06:40:47.996Z",
   "objectRefs" : [ {
-    "id" : "0Wy0t75IdkVihLF58Onao1",
-    "name" : "Cleanse_TC003",
-    "type" : "CLEANSE",
-    "metadata" : {
-      "modelVersion" : {
-        "major" : 1,
-        "minor" : 0
-      },
-      "repoInfo" : {
-        "repoHandle" : "0Wy0t75IdkVihLF58Onao1"
-      },
-      "contextAttributes" : null,
-      "additionalInfo" : {
-        "description" : "Remove dictionary values",
-        "contentType" : "Binary",
-        "documentState" : "VALID"
-      }
-    },
-    "path" : "/Explore/Auto_Project_Git_Version/Folder2"
-  }, {
     "id" : "0ImslthRCXajrIqXSdrgWz",
     "name" : "cleanse_target_connection",
     "type" : "Connection",
@@ -64,6 +44,26 @@
       }
     },
     "path" : "/SYS"
+  }, {
+    "id" : "2MzXWolf5Zbfya4eWWRMCW",
+    "name" : "Parse_Versioning_Dict",
+    "type" : "PARSE",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 1,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "2MzXWolf5Zbfya4eWWRMCW"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : null,
+        "contentType" : "Binary",
+        "documentState" : "VALID"
+      }
+    },
+    "path" : "/Explore/Auto_Project_Git_Version"
   }, {
     "id" : "2IC7jncljhLliFiKegZtEK",
     "name" : "cleanse_source_connection",

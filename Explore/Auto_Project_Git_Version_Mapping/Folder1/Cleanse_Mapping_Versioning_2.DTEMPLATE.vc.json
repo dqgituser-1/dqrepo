@@ -6,11 +6,11 @@
     "specialCharacterSupport" : "false",
     "links" : [
       {
-        "link" : "Source -> Cleanse",
+        "link" : "Source -> Parse",
         "groupLink" : "DefaultGroup -> Input group:"
       },
       {
-        "link" : "Cleanse -> Target",
+        "link" : "Parse -> Target",
         "groupLink" : "MappletOutputTx_Output -> DefaultGroup"
       }
     ],
@@ -200,8 +200,14 @@
         }
       },
       {
-        "createTime" : "2019-10-04T11:16:50.916Z",
-        "name" : "Cleanse",
+        "createTime" : "2025-05-07T06:39:32.630Z",
+        "name" : "Parse",
+        "advancedProperties" : [
+          {
+            "name" : "version",
+            "value" : "R37"
+          }
+        ],
         "groups" : [
           {
             "input" : "true",
@@ -209,12 +215,8 @@
             "output" : "false",
             "rules" : [
               {
-                "bulkRename" : "true",
-                "include" : "true",
-                "bulkRenameOption" : {
-                  "literal" : "src_",
-                  "suffix" : "false"
-                }
+                "bulkRename" : "false",
+                "include" : "true"
               }
             ]
           },
@@ -224,7 +226,7 @@
             "output" : "true"
           }
         ],
-        "assetId" : "@0Wy0t75IdkVihLF58Onao1",
+        "assetId" : "@2MzXWolf5Zbfya4eWWRMCW",
         "inputGroups" : [
           {
             "name" : "Input group:",
@@ -232,11 +234,11 @@
             "fieldMapping" : {
               "fields" : [
                 {
-                  "name" : "src_Cleanse_TC003",
+                  "name" : "Cleanse_TC003",
                   "precision" : 0,
                   "scale" : 0,
                   "txField" : {
-                    "name" : "Cleanse_TC003"
+                    "name" : "Parse_Versioning_Dict"
                   }
                 }
               ]
@@ -246,7 +248,7 @@
         "inputFields" : {
           "fieldList" : [
             {
-              "name" : "Cleanse_TC003",
+              "name" : "Parse_Versioning_Dict",
               "platformType" : {
                 "name" : "string"
               },
@@ -258,7 +260,23 @@
         "outputFields" : {
           "fieldList" : [
             {
-              "name" : "Cleanse_TC003",
+              "name" : "output_1",
+              "platformType" : {
+                "name" : "string"
+              },
+              "precision" : 40,
+              "scale" : 0
+            },
+            {
+              "name" : "Overflow",
+              "platformType" : {
+                "name" : "string"
+              },
+              "precision" : 40,
+              "scale" : 0
+            },
+            {
+              "name" : "Unparsed",
               "platformType" : {
                 "name" : "string"
               },
@@ -270,5 +288,5 @@
       }
     ]
   },
-  "vcsExportTime" : "2025-05-06 23:38:33 PDT"
+  "vcsExportTime" : "2025-05-06 23:40:47 PDT"
 }
