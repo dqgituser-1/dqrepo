@@ -3,6 +3,7 @@
     "description" : "A simpleMapping Using Cleanse",
     "allowMaxFieldLength" : "false",
     "name" : "Cleanse_Mapping_Versioning_2",
+    "specialCharacterSupport" : "false",
     "links" : [
       {
         "link" : "Source -> Cleanse",
@@ -84,6 +85,7 @@
               "delimiter" : ",",
               "firstDataRow" : 2,
               "firstDataRowAsHeader" : "false",
+              "headerAndDataDelimiter" : 0,
               "headerLineNo" : 1,
               "multiDelimitersAsAnd" : "true",
               "rowDelimiter" : 0,
@@ -174,6 +176,7 @@
               "delimiter" : ",",
               "firstDataRow" : 2,
               "firstDataRowAsHeader" : "false",
+              "headerAndDataDelimiter" : 0,
               "headerLineNo" : 1,
               "multiDelimitersAsAnd" : "true",
               "rowDelimiter" : 0,
@@ -267,5 +270,5 @@
       }
     ]
   },
-  "vcsExportTime" : "2025-02-11 00:37:20 PST"
+  "vcsExportTime" : "2025-05-06 23:38:33 PDT"
 }
