@@ -1,0 +1,27 @@
+{
+  "objectInfo" : {
+    "id" : "4zthTsGmuuPhNBHogHw5O0",
+    "name" : "Cleanse_dq1",
+    "type" : "CLEANSE",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 1,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "4zthTsGmuuPhNBHogHw5O0"
+      },
+      "contextAttributes" : [ ],
+      "additionalInfo" : {
+        "description" : null,
+        "contentType" : "Binary",
+        "documentState" : "VALID"
+      }
+    }
+  },
+  "dataFileExtension" : "json",
+  "updateTime" : "2025-05-07T08:53:19.935Z",
+  "objectRefs" : [ ],
+  "readableFileExtension" : null,
+  "readableFilePresent" : false
+}
