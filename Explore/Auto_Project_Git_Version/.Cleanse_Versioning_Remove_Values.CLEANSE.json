@@ -1,19 +1,21 @@
 {
   "objectInfo" : {
-    "id" : "al92e2w0adGjJrYnYg58KX",
-    "name" : "Auto_Project_Git_Version",
-    "type" : "Project",
+    "id" : "aEKJUt1xnIpfxodpudfkEf",
+    "name" : "Cleanse_Versioning_Remove_Values",
+    "type" : "CLEANSE",
     "metadata" : {
       "modelVersion" : {
-        "major" : 0,
+        "major" : 1,
         "minor" : 0
       },
-      "repoInfo" : null,
+      "repoInfo" : {
+        "repoHandle" : "aEKJUt1xnIpfxodpudfkEf"
+      },
       "contextAttributes" : [ ],
       "additionalInfo" : {
-        "description" : "project_desc1",
+        "description" : null,
         "contentType" : "Binary",
-        "documentState" : "COMPLETE"
+        "documentState" : "VALID"
       }
     }
   },
