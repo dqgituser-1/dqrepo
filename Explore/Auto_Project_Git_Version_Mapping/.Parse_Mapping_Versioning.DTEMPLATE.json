@@ -1,0 +1,90 @@
+{
+  "objectInfo" : {
+    "id" : "93MaXrHomo2eBzFDVn3swW",
+    "name" : "Parse_Mapping_Versioning",
+    "type" : "DTEMPLATE",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 0,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "0183RG1700000000001F"
+      },
+      "contextAttributes" : [ {
+        "name" : "id",
+        "value" : "@1"
+      } ],
+      "additionalInfo" : {
+        "description" : "test description",
+        "contentType" : "JSON",
+        "documentState" : "VALID"
+      }
+    }
+  },
+  "dataFileExtension" : "zip",
+  "updateTime" : "2025-05-15T09:56:33.568Z",
+  "objectRefs" : [ {
+    "id" : "cIk6JFoqm4YjXkY6q6rqSv",
+    "name" : "parse_source_connection",
+    "type" : "Connection",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 0,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "0183RG0B000000000008"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : "Source Flat File Connection.",
+        "contentType" : "JSON",
+        "documentState" : "COMPLETE"
+      }
+    },
+    "path" : "/SYS"
+  }, {
+    "id" : "9mJVEBe4nEZcJNgL15EZwk",
+    "name" : "parse_email_9517",
+    "type" : "PARSE",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 1,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "9mJVEBe4nEZcJNgL15EZwk"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : "parsing email",
+        "contentType" : "Binary",
+        "documentState" : "VALID"
+      }
+    },
+    "path" : "/Explore/Auto_Project_Git_Version/Folder2"
+  }, {
+    "id" : "hjp4659u3eSeIGg31jJv49",
+    "name" : "parse_target_connection",
+    "type" : "Connection",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 0,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "0183RG0B000000000009"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : "Target Flat File Connection.",
+        "contentType" : "JSON",
+        "documentState" : "COMPLETE"
+      }
+    },
+    "path" : "/SYS"
+  } ],
+  "readableFileExtension" : "json",
+  "readableFilePresent" : true
+}

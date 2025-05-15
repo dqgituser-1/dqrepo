@@ -1,0 +1,343 @@
+{
+  "content" : {
+    "description" : "test description",
+    "allowMaxFieldLength" : "false",
+    "name" : "Parse_Mapping_Versioning",
+    "specialCharacterSupport" : "false",
+    "links" : [
+      {
+        "link" : "Source -> Parse",
+        "groupLink" : "DefaultGroup -> Input group:"
+      },
+      {
+        "link" : "Parse -> Target",
+        "groupLink" : "MappletOutputTx_Output -> DefaultGroup"
+      }
+    ],
+    "parameters" : [
+      {
+        "input" : "true",
+        "output" : "false",
+        "precision" : 0,
+        "scale" : 0,
+        "allowRuntimeOverride" : "false",
+        "expressionVariable" : "false",
+        "name" : "Sk_Parse_Param",
+        "anonymousType" : {
+          "allowPartialOverride" : "false"
+        }
+      },
+      {
+        "input" : "true",
+        "output" : "false",
+        "precision" : 0,
+        "scale" : 0,
+        "allowRuntimeOverride" : "false",
+        "expressionVariable" : "false",
+        "name" : "sk_name"
+      },
+      {
+        "input" : "true",
+        "output" : "false",
+        "precision" : 0,
+        "scale" : 0,
+        "allowRuntimeOverride" : "false",
+        "expressionVariable" : "false",
+        "name" : "New_Parse_param"
+      },
+      {
+        "input" : "true",
+        "output" : "false",
+        "precision" : 0,
+        "scale" : 0,
+        "allowRuntimeOverride" : "false",
+        "expressionVariable" : "false",
+        "name" : "NewParameter",
+        "anonymousType" : {
+          "allowPartialOverride" : "false"
+        }
+      },
+      {
+        "input" : "true",
+        "output" : "false",
+        "precision" : 0,
+        "scale" : 0,
+        "allowRuntimeOverride" : "false",
+        "expressionVariable" : "false",
+        "name" : "NewParameter1"
+      }
+    ],
+    "transformations" : [
+      {
+        "createTime" : "2020-03-06T08:34:40.274Z",
+        "name" : "Source",
+        "advancedProperties" : [
+          {
+            "name" : "Tracing Level",
+            "value" : "Normal"
+          },
+          {
+            "name" : "Output is deterministic",
+            "value" : "false"
+          }
+        ],
+        "groups" : [
+          {
+            "input" : "false",
+            "name" : "DefaultGroup",
+            "output" : "true"
+          }
+        ],
+        "generateFilenamePort" : "false",
+        "useLabels" : "false",
+        "useSequenceFields" : "false",
+        "fields" : [
+          {
+            "adapterField" : {
+              "name" : "Email_ID"
+            },
+            "name" : "Email_ID",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          }
+        ],
+        "dataAdapter" : {
+          "connectionId" : "saas:@cIk6JFoqm4YjXkY6q6rqSv",
+          "connectionName" : "parse_source_connection",
+          "excludeDynamicFileNameField" : "false",
+          "objectType" : "SINGLE",
+          "typeSystem" : "CSVFile",
+          "useDynamicFileName" : "false",
+          "object" : {
+            "name" : "parse_9154_email.csv",
+            "label" : "parse_9154_email.csv",
+            "path" : "parse_9154_email.csv",
+            "retainMetadata" : "false",
+            "fields" : [
+              {
+                "name" : "Email_ID",
+                "fieldType" : "UNDEFINED",
+                "label" : "Email_ID",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "parse_9154_email.csv"
+                  }
+                ]
+              }
+            ],
+            "fileAttrs" : {
+              "consecutiveDelimiter" : "false",
+              "delimiter" : ",",
+              "firstDataRow" : 2,
+              "firstDataRowAsHeader" : "false",
+              "headerAndDataDelimiter" : 0,
+              "headerLineNo" : 1,
+              "multiDelimitersAsAnd" : "true",
+              "rowDelimiter" : 0,
+              "textQualifier" : "\""
+            }
+          },
+          "readOptions" : {
+            "commandType" : 0,
+            "descending" : "false",
+            "queryAll" : "false",
+            "rowLimit" : 0,
+            "selectDistinct" : "false"
+          }
+        }
+      },
+      {
+        "createTime" : "2020-03-06T08:34:40.278Z",
+        "name" : "Target",
+        "advancedProperties" : [
+          {
+            "name" : "Forward Rejected Rows",
+            "value" : "true"
+          }
+        ],
+        "groups" : [
+          {
+            "input" : "true",
+            "name" : "DefaultGroup",
+            "output" : "false",
+            "rules" : [
+              {
+                "bulkRename" : "false",
+                "include" : "true"
+              }
+            ]
+          }
+        ],
+        "sessionProperties" : [
+          {
+            "name" : "Append if Exists",
+            "value" : "NO"
+          },
+          {
+            "name" : "Header Options",
+            "value" : "Output Field Names"
+          },
+          {
+            "name" : "Output Type",
+            "value" : "File"
+          }
+        ],
+        "createTarget" : "true",
+        "fieldMappingMode" : "BY_NAME",
+        "inputSorted" : "false",
+        "schemaProviderType" : "SELECTED_OBJECT",
+        "updateColumns" : null,
+        "useLabels" : "false",
+        "useSequenceFields" : "false",
+        "dataAdapter" : {
+          "connectionId" : "saas:@hjp4659u3eSeIGg31jJv49",
+          "connectionName" : "parse_target_connection",
+          "excludeDynamicFileNameField" : "false",
+          "objectType" : "SINGLE",
+          "typeSystem" : "CSVFile",
+          "useDynamicFileName" : "false",
+          "bulkOptions" : {
+            "hardDelete" : "false",
+            "maxRowsPerRequest" : 0,
+            "monitorBulk" : "false",
+            "monitorBulkV2" : "false",
+            "pkChunkingEnabled" : "false",
+            "pkChunkingSize" : 0,
+            "serialMode" : "false",
+            "useBulkApi" : "false",
+            "useBulkApiV2" : "false"
+          },
+          "object" : {
+            "name" : "tgt_parse_9517.csv",
+            "label" : "tgt_parse_9517.csv",
+            "path" : "tgt_parse_9517.csv",
+            "retainMetadata" : "false",
+            "fileAttrs" : {
+              "consecutiveDelimiter" : "false",
+              "delimiter" : ",",
+              "firstDataRow" : 2,
+              "firstDataRowAsHeader" : "false",
+              "headerAndDataDelimiter" : 0,
+              "headerLineNo" : 1,
+              "multiDelimitersAsAnd" : "true",
+              "rowDelimiter" : 0,
+              "textQualifier" : "\""
+            }
+          },
+          "writeOptions" : {
+            "batchSize" : 0,
+            "bulkApi" : "false",
+            "handleDecimalRoundOff" : "false",
+            "handleSpecialChars" : "true",
+            "operations" : [
+              "Insert"
+            ],
+            "setFieldsToNull" : "false",
+            "truncate" : "false",
+            "useErrorFile" : "false",
+            "useExactSrcNames" : "false",
+            "useSuccessFile" : "false"
+          }
+        }
+      },
+      {
+        "createTime" : "2020-03-06T08:36:15.044Z",
+        "name" : "Parse",
+        "groups" : [
+          {
+            "input" : "true",
+            "name" : "Input group:",
+            "output" : "false",
+            "rules" : [
+              {
+                "bulkRename" : "false",
+                "include" : "true"
+              }
+            ]
+          },
+          {
+            "input" : "false",
+            "name" : "MappletOutputTx_Output",
+            "output" : "true"
+          }
+        ],
+        "assetId" : "@9mJVEBe4nEZcJNgL15EZwk",
+        "inputGroups" : [
+          {
+            "name" : "Input group:",
+            "fieldMappingMode" : "MANUAL",
+            "fieldMapping" : {
+              "fields" : [
+                {
+                  "name" : "Email_ID",
+                  "precision" : 0,
+                  "scale" : 0,
+                  "txField" : {
+                    "name" : "parse_email_9517"
+                  }
+                }
+              ]
+            }
+          }
+        ],
+        "inputFields" : {
+          "fieldList" : [
+            {
+              "name" : "parse_email_9517",
+              "platformType" : {
+                "name" : "string"
+              },
+              "precision" : 40,
+              "scale" : 0
+            }
+          ]
+        },
+        "outputFields" : {
+          "fieldList" : [
+            {
+              "name" : "Regex_output",
+              "platformType" : {
+                "name" : "string"
+              },
+              "precision" : 40,
+              "scale" : 0
+            },
+            {
+              "name" : "Regex_output2",
+              "platformType" : {
+                "name" : "string"
+              },
+              "precision" : 40,
+              "scale" : 0
+            },
+            {
+              "name" : "Overflow",
+              "platformType" : {
+                "name" : "string"
+              },
+              "precision" : 40,
+              "scale" : 0
+            },
+            {
+              "name" : "Unparsed",
+              "platformType" : {
+                "name" : "string"
+              },
+              "precision" : 40,
+              "scale" : 0
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "vcsExportTime" : "2025-05-15 02:56:33 PDT"
+}
