@@ -1,0 +1,47 @@
+{
+  "objectInfo" : {
+    "id" : "67oACBjs3GHhh3NGVCZEws",
+    "name" : "Labeler_dict",
+    "type" : "LABELER",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 1,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "67oACBjs3GHhh3NGVCZEws"
+      },
+      "contextAttributes" : [ ],
+      "additionalInfo" : {
+        "description" : null,
+        "contentType" : "Binary",
+        "documentState" : "VALID"
+      }
+    }
+  },
+  "dataFileExtension" : "json",
+  "updateTime" : "2025-05-16T08:32:20.147Z",
+  "objectRefs" : [ {
+    "id" : "fHS1CxeLkGPf2N9si0ld2m",
+    "name" : "Dictionary_git",
+    "type" : "DICTIONARY",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 1,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "fHS1CxeLkGPf2N9si0ld2m"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : "Creating new dictionary in git",
+        "contentType" : "Binary",
+        "documentState" : "VALID"
+      }
+    },
+    "path" : "/Explore/Default"
+  } ],
+  "readableFileExtension" : null,
+  "readableFilePresent" : false
+}
