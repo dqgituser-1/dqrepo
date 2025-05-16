@@ -1,0 +1,47 @@
+{
+  "objectInfo" : {
+    "id" : "7b0ky8hRuVSgSBYm6keskY",
+    "name" : "Cleanse_dict",
+    "type" : "CLEANSE",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 1,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "7b0ky8hRuVSgSBYm6keskY"
+      },
+      "contextAttributes" : [ ],
+      "additionalInfo" : {
+        "description" : null,
+        "contentType" : "Binary",
+        "documentState" : "VALID"
+      }
+    }
+  },
+  "dataFileExtension" : "json",
+  "updateTime" : "2025-05-16T08:17:10.440Z",
+  "objectRefs" : [ {
+    "id" : "fHS1CxeLkGPf2N9si0ld2m",
+    "name" : "Dictionary_git",
+    "type" : "DICTIONARY",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 1,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "fHS1CxeLkGPf2N9si0ld2m"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : "Creating new dictionary in git",
+        "contentType" : "Binary",
+        "documentState" : "VALID"
+      }
+    },
+    "path" : "/Explore/Default"
+  } ],
+  "readableFileExtension" : null,
+  "readableFilePresent" : false
+}
