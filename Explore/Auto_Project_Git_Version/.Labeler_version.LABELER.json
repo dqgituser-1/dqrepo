@@ -1,7 +1,7 @@
 {
   "objectInfo" : {
     "id" : "0Lflc7tfnIMhgCyxwVGwgv",
-    "name" : "Labeler1",
+    "name" : "Labeler_version",
     "type" : "LABELER",
     "metadata" : {
       "modelVersion" : {
@@ -20,7 +20,7 @@
     }
   },
   "dataFileExtension" : "json",
-  "updateTime" : "2025-05-20T10:17:00.341Z",
+  "updateTime" : "2025-05-20T10:19:32.862Z",
   "objectRefs" : [ ],
   "readableFileExtension" : null,
   "readableFilePresent" : false
