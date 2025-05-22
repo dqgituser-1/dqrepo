@@ -1,0 +1,47 @@
+{
+  "objectInfo" : {
+    "id" : "fy6dE7RT5coln1vruKl3MS",
+    "name" : "Labeler_07M",
+    "type" : "LABELER",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 1,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "fy6dE7RT5coln1vruKl3MS"
+      },
+      "contextAttributes" : [ ],
+      "additionalInfo" : {
+        "description" : null,
+        "contentType" : "Binary",
+        "documentState" : "VALID"
+      }
+    }
+  },
+  "dataFileExtension" : "json",
+  "updateTime" : "2025-05-22T07:28:29.557Z",
+  "objectRefs" : [ {
+    "id" : "1Jvyck71BI8luaU0pS7OGZ",
+    "name" : "Dictionary2_Project_Versioning",
+    "type" : "DICTIONARY",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 1,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "1Jvyck71BI8luaU0pS7OGZ"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : null,
+        "contentType" : "Binary",
+        "documentState" : "VALID"
+      }
+    },
+    "path" : "/Explore/Auto_Project_Git_Version"
+  } ],
+  "readableFileExtension" : null,
+  "readableFilePresent" : false
+}
