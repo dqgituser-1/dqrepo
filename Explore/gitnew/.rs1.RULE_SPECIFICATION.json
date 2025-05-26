@@ -1,24 +1,26 @@
 {
   "objectInfo" : {
-    "id" : "kxH18JQRmUscYx41UQwHoK",
-    "name" : "gitnew",
-    "type" : "Project",
+    "id" : "1Wd2Ft3xlOSfLvqGFLsfgH",
+    "name" : "rs1",
+    "type" : "RULE_SPECIFICATION",
     "metadata" : {
       "modelVersion" : {
-        "major" : 0,
+        "major" : 1,
         "minor" : 0
       },
-      "repoInfo" : null,
+      "repoInfo" : {
+        "repoHandle" : "1Wd2Ft3xlOSfLvqGFLsfgH"
+      },
       "contextAttributes" : [ ],
       "additionalInfo" : {
-        "description" : "",
+        "description" : null,
         "contentType" : "Binary",
-        "documentState" : "COMPLETE"
+        "documentState" : "VALID"
       }
     }
   },
   "dataFileExtension" : "json",
-  "updateTime" : "2025-05-26T09:18:42.609Z",
+  "updateTime" : "2025-05-26T09:18:42.608Z",
   "objectRefs" : [ ],
   "readableFileExtension" : null,
   "readableFilePresent" : false
