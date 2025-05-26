@@ -1,0 +1,25 @@
+{
+  "objectInfo" : {
+    "id" : "4TXb9wbylYbb6CQK2wAuC4",
+    "name" : "__DQC_ZDT_Artifacts",
+    "type" : "Project",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 0,
+        "minor" : 0
+      },
+      "repoInfo" : null,
+      "contextAttributes" : [ ],
+      "additionalInfo" : {
+        "description" : "Project contains all the artifacts required for DQ ZDT test",
+        "contentType" : "Binary",
+        "documentState" : "COMPLETE"
+      }
+    }
+  },
+  "dataFileExtension" : "json",
+  "updateTime" : "2025-05-26T08:43:18.453Z",
+  "objectRefs" : [ ],
+  "readableFileExtension" : null,
+  "readableFilePresent" : false
+}

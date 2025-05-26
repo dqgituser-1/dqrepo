@@ -1,0 +1,190 @@
+{
+  "objectInfo" : {
+    "id" : "6jxxoBPZxkvlQplC1Fs8Ai",
+    "name" : "DQC_AllTx_ZDT_Mapping",
+    "type" : "DTEMPLATE",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 0,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "014OEF1700000000000F"
+      },
+      "contextAttributes" : [ {
+        "name" : "id",
+        "value" : "@1"
+      } ],
+      "additionalInfo" : {
+        "description" : "",
+        "contentType" : "JSON",
+        "documentState" : "VALID"
+      }
+    }
+  },
+  "dataFileExtension" : "zip",
+  "updateTime" : "2025-05-26T08:43:18.453Z",
+  "objectRefs" : [ {
+    "id" : "6S8qTMD0xLMemyYcJlBmIn",
+    "name" : "continuousJob_source_connection",
+    "type" : "Connection",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 0,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "014OEF0B000000000003"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : null,
+        "contentType" : "JSON",
+        "documentState" : "COMPLETE"
+      }
+    },
+    "path" : "/SYS"
+  }, {
+    "id" : "2rUuZsOdfqjgMSLeU3gHsN",
+    "name" : "dq_zdt_Labeler",
+    "type" : "LABELER",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 1,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "2rUuZsOdfqjgMSLeU3gHsN"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : null,
+        "contentType" : "Binary",
+        "documentState" : "VALID"
+      }
+    },
+    "path" : "/Explore/__DQC_ZDT_Artifacts"
+  }, {
+    "id" : "4IfMViFReqXd37KDagf0oy",
+    "name" : "dq_zdt_Deduplicate_MostFilled",
+    "type" : "DEDUPLICATE",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 1,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "4IfMViFReqXd37KDagf0oy"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : null,
+        "contentType" : "Binary",
+        "documentState" : "VALID"
+      }
+    },
+    "path" : "/Explore/__DQC_ZDT_Artifacts"
+  }, {
+    "id" : "8pGzCjbuPYtimK1n12ZLov",
+    "name" : "continuousjob_target_connection",
+    "type" : "Connection",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 0,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "014OEF0B000000000002"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : null,
+        "contentType" : "JSON",
+        "documentState" : "COMPLETE"
+      }
+    },
+    "path" : "/SYS"
+  }, {
+    "id" : "3s2qLQh5cbOkcIXWFtKWeH",
+    "name" : "dq_zdt_Cleanse",
+    "type" : "CLEANSE",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 1,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "3s2qLQh5cbOkcIXWFtKWeH"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : "Cleanse Asset in DQ ZDT",
+        "contentType" : "Binary",
+        "documentState" : "VALID"
+      }
+    },
+    "path" : "/Explore/__DQC_ZDT_Artifacts"
+  }, {
+    "id" : "5ogZOogUhLklq68hdGlvi9",
+    "name" : "dq_zdt_Rule",
+    "type" : "RULE_SPECIFICATION",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 1,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "5ogZOogUhLklq68hdGlvi9"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : null,
+        "contentType" : "Binary",
+        "documentState" : "VALID"
+      }
+    },
+    "path" : "/Explore/__DQC_ZDT_Artifacts"
+  }, {
+    "id" : "a1iKNMmpg4Kg2WhS84P3US",
+    "name" : "dq_zdt_Verifier",
+    "type" : "VERIFIER",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 1,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "a1iKNMmpg4Kg2WhS84P3US"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : "Verifier Asset in DQ ZDT",
+        "contentType" : "Binary",
+        "documentState" : "VALID"
+      }
+    },
+    "path" : "/Explore/__DQC_ZDT_Artifacts"
+  }, {
+    "id" : "a75lmAs5lVzcrSVJPNrQc4",
+    "name" : "dq_zdt_Parse",
+    "type" : "PARSE",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 1,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "a75lmAs5lVzcrSVJPNrQc4"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : null,
+        "contentType" : "Binary",
+        "documentState" : "VALID"
+      }
+    },
+    "path" : "/Explore/__DQC_ZDT_Artifacts"
+  } ],
+  "readableFileExtension" : "json",
+  "readableFilePresent" : true
+}

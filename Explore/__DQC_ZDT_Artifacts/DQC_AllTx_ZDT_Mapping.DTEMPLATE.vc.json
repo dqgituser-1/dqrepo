@@ -1,0 +1,970 @@
+{
+  "content" : {
+    "allowMaxFieldLength" : "false",
+    "name" : "DQC_AllTx_ZDT_Mapping",
+    "specialCharacterSupport" : "false",
+    "links" : [
+      {
+        "link" : "Cleanse -> Target",
+        "groupLink" : "MappletOutputTx_Output -> DefaultGroup"
+      },
+      {
+        "link" : "Verifier -> RuleSpecification",
+        "groupLink" : "MappletOutputTx_Output -> Input group:"
+      },
+      {
+        "link" : "Source -> Parse",
+        "groupLink" : "DefaultGroup -> Input group:"
+      },
+      {
+        "link" : "Parse -> Deduplicate",
+        "groupLink" : "MappletOutputTx_Output -> Input group:"
+      },
+      {
+        "link" : "Deduplicate -> Verifier",
+        "groupLink" : "MappletOutputTx_Output -> Input group:"
+      },
+      {
+        "link" : "RuleSpecification -> Labeler",
+        "groupLink" : "MappletOutputTx_Output -> Input group:"
+      },
+      {
+        "link" : "Labeler -> Cleanse",
+        "groupLink" : "MappletOutputTx_Output -> Input group:"
+      }
+    ],
+    "transformations" : [
+      {
+        "createTime" : "2019-10-04T10:28:50.861Z",
+        "name" : "Source",
+        "advancedProperties" : [
+          {
+            "name" : "Tracing Level",
+            "value" : "Normal"
+          },
+          {
+            "name" : "Output is deterministic",
+            "value" : "false"
+          }
+        ],
+        "groups" : [
+          {
+            "input" : "false",
+            "name" : "DefaultGroup",
+            "output" : "true"
+          }
+        ],
+        "generateFilenamePort" : "false",
+        "useLabels" : "false",
+        "useSequenceFields" : "false",
+        "fields" : [
+          {
+            "adapterField" : {
+              "name" : "Address_Line1_Address_Line2_Address_Line3_City"
+            },
+            "name" : "Address_Line1_Address_Line2_Address_Line3_City",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "Country"
+            },
+            "name" : "Country",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 255,
+            "scale" : 0
+          }
+        ],
+        "dataAdapter" : {
+          "connectionId" : "saas:@6S8qTMD0xLMemyYcJlBmIn",
+          "connectionName" : "continuousJob_source_connection",
+          "excludeDynamicFileNameField" : "false",
+          "objectType" : "SINGLE",
+          "typeSystem" : "CSVFile",
+          "useDynamicFileName" : "false",
+          "object" : {
+            "name" : "TC105_Src3_multi.csv",
+            "label" : "TC105_Src3_multi.csv",
+            "objectName" : "TC105_Src3_multi.csv",
+            "path" : "TC105_Src3_multi.csv",
+            "retainMetadata" : "false",
+            "fields" : [
+              {
+                "name" : "Address_Line1_Address_Line2_Address_Line3_City",
+                "fieldType" : "CONNECTOR",
+                "label" : "Address_Line1_Address_Line2_Address_Line3_City",
+                "nativeName" : "Address_Line1_Address_Line2_Address_Line3_City",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "TC105_Src3_multi.csv"
+                  }
+                ]
+              },
+              {
+                "name" : "Country",
+                "fieldType" : "CONNECTOR",
+                "label" : "Country",
+                "nativeName" : "Country",
+                "nativeType" : "nstring",
+                "original" : "false",
+                "precision" : 255,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "TC105_Src3_multi.csv"
+                  }
+                ]
+              }
+            ],
+            "fileAttrs" : {
+              "consecutiveDelimiter" : "false",
+              "delimiter" : ",",
+              "firstDataRow" : 2,
+              "firstDataRowAsHeader" : "false",
+              "headerAndDataDelimiter" : 0,
+              "headerLineNo" : 1,
+              "multiDelimitersAsAnd" : "true",
+              "rowDelimiter" : 0,
+              "textQualifier" : "\""
+            }
+          },
+          "readOptions" : {
+            "commandType" : 0,
+            "descending" : "false",
+            "queryAll" : "false",
+            "rowLimit" : 0,
+            "selectDistinct" : "false"
+          }
+        }
+      },
+      {
+        "createTime" : "2019-10-04T10:28:50.863Z",
+        "name" : "Target",
+        "advancedProperties" : [
+          {
+            "name" : "Forward Rejected Rows",
+            "value" : "true"
+          }
+        ],
+        "groups" : [
+          {
+            "input" : "true",
+            "name" : "DefaultGroup",
+            "output" : "false",
+            "rules" : [
+              {
+                "bulkRename" : "false",
+                "include" : "true"
+              }
+            ]
+          }
+        ],
+        "sessionProperties" : [
+          {
+            "name" : "Append if Exists",
+            "value" : "NO"
+          },
+          {
+            "name" : "Header Options",
+            "value" : "Output Field Names"
+          },
+          {
+            "name" : "Output Type",
+            "value" : "File"
+          }
+        ],
+        "createTarget" : "true",
+        "fieldMappingMode" : "BY_NAME",
+        "inputSorted" : "false",
+        "schemaProviderType" : "SELECTED_OBJECT",
+        "updateColumns" : null,
+        "useLabels" : "false",
+        "useSequenceFields" : "false",
+        "dataAdapter" : {
+          "connectionId" : "saas:@8pGzCjbuPYtimK1n12ZLov",
+          "connectionName" : "continuousjob_target_connection",
+          "excludeDynamicFileNameField" : "false",
+          "objectType" : "SINGLE",
+          "typeSystem" : "CSVFile",
+          "useDynamicFileName" : "false",
+          "bulkOptions" : {
+            "hardDelete" : "false",
+            "maxRowsPerRequest" : 0,
+            "monitorBulk" : "false",
+            "monitorBulkV2" : "false",
+            "pkChunkingEnabled" : "false",
+            "pkChunkingSize" : 0,
+            "serialMode" : "false",
+            "useBulkApi" : "false",
+            "useBulkApiV2" : "false"
+          },
+          "object" : {
+            "name" : "DQC_AllTx_continuousMapping.csv",
+            "label" : "DQC_AllTx_continuousMapping.csv",
+            "path" : "DQC_AllTx_continuousMapping.csv",
+            "retainMetadata" : "false",
+            "fileAttrs" : {
+              "consecutiveDelimiter" : "false",
+              "delimiter" : ",",
+              "firstDataRow" : 2,
+              "firstDataRowAsHeader" : "false",
+              "headerAndDataDelimiter" : 0,
+              "headerLineNo" : 1,
+              "multiDelimitersAsAnd" : "true",
+              "rowDelimiter" : 0,
+              "textQualifier" : "\""
+            }
+          },
+          "writeOptions" : {
+            "batchSize" : 0,
+            "bulkApi" : "false",
+            "handleDecimalRoundOff" : "false",
+            "handleSpecialChars" : "true",
+            "operations" : [
+              "Insert"
+            ],
+            "setFieldsToNull" : "false",
+            "truncate" : "false",
+            "useErrorFile" : "false",
+            "useExactSrcNames" : "false",
+            "useSuccessFile" : "false"
+          }
+        }
+      },
+      {
+        "createTime" : "2019-10-04T10:30:31.686Z",
+        "name" : "RuleSpecification",
+        "advancedProperties" : [
+          {
+            "name" : "version",
+            "value" : "R37"
+          }
+        ],
+        "groups" : [
+          {
+            "input" : "true",
+            "name" : "Input group:",
+            "output" : "false",
+            "rules" : [
+              {
+                "bulkRename" : "false",
+                "include" : "true"
+              }
+            ]
+          },
+          {
+            "input" : "false",
+            "name" : "MappletOutputTx_Output",
+            "output" : "true"
+          }
+        ],
+        "documentId" : "@5ogZOogUhLklq68hdGlvi9",
+        "ruleId" : "@5ogZOogUhLklq68hdGlvi9",
+        "inputGroups" : [
+          {
+            "name" : "Input group:",
+            "fieldMappingMode" : "MANUAL",
+            "fieldMapping" : {
+              "fields" : [
+                {
+                  "name" : "Verification_Status_Code",
+                  "precision" : 0,
+                  "scale" : 0,
+                  "txField" : {
+                    "name" : "Verification_Status_Code"
+                  }
+                }
+              ]
+            }
+          }
+        ],
+        "inputFields" : {
+          "fieldList" : [
+            {
+              "name" : "Verification_Status_Code",
+              "platformType" : {
+                "name" : "string"
+              },
+              "precision" : 50,
+              "scale" : 0
+            }
+          ]
+        },
+        "outputFields" : {
+          "fieldList" : [
+            {
+              "name" : "PrimaryRuleSet",
+              "platformType" : {
+                "name" : "string"
+              },
+              "precision" : 100,
+              "scale" : 0
+            }
+          ]
+        }
+      },
+      {
+        "createTime" : "2019-10-04T10:48:41.861Z",
+        "name" : "Cleanse",
+        "advancedProperties" : [
+          {
+            "name" : "version",
+            "value" : "R37"
+          }
+        ],
+        "groups" : [
+          {
+            "input" : "true",
+            "name" : "Input group:",
+            "output" : "false",
+            "rules" : [
+              {
+                "bulkRename" : "false",
+                "include" : "true"
+              }
+            ]
+          },
+          {
+            "input" : "false",
+            "name" : "MappletOutputTx_Output",
+            "output" : "true"
+          }
+        ],
+        "assetId" : "@3s2qLQh5cbOkcIXWFtKWeH",
+        "inputGroups" : [
+          {
+            "name" : "Input group:",
+            "fieldMappingMode" : "BY_NAME"
+          }
+        ],
+        "inputFields" : {
+          "fieldList" : [
+            {
+              "name" : "LabeledOutput",
+              "platformType" : {
+                "name" : "string"
+              },
+              "precision" : 40,
+              "scale" : 0
+            }
+          ]
+        },
+        "outputFields" : {
+          "fieldList" : [
+            {
+              "name" : "LabeledOutput_Cleanse",
+              "platformType" : {
+                "name" : "string"
+              },
+              "precision" : 40,
+              "scale" : 0
+            }
+          ]
+        }
+      },
+      {
+        "createTime" : "2019-12-26T09:38:28.123Z",
+        "name" : "Verifier",
+        "advancedProperties" : [
+          {
+            "name" : "version",
+            "value" : "R37"
+          }
+        ],
+        "groups" : [
+          {
+            "input" : "true",
+            "name" : "Input group:",
+            "output" : "false",
+            "rules" : [
+              {
+                "bulkRename" : "false",
+                "include" : "true"
+              }
+            ]
+          },
+          {
+            "input" : "false",
+            "name" : "MappletOutputTx_Output",
+            "output" : "true"
+          }
+        ],
+        "active" : "false",
+        "verifierAssetDocumentId" : "0O1MGuDj8mVlGTJYa9n9gG",
+        "verifierAssetId" : "@a1iKNMmpg4Kg2WhS84P3US",
+        "inputGroups" : [
+          {
+            "name" : "Input group:",
+            "fieldMappingMode" : "MANUAL",
+            "fieldMapping" : {
+              "fields" : [
+                {
+                  "name" : "Address_Line1_Address_Line2_Address_Line3_City",
+                  "precision" : 0,
+                  "scale" : 0,
+                  "txField" : {
+                    "name" : "Formatted_Address_Lines_1"
+                  }
+                },
+                {
+                  "name" : "Country",
+                  "precision" : 0,
+                  "scale" : 0,
+                  "txField" : {
+                    "name" : "Country"
+                  }
+                }
+              ]
+            }
+          }
+        ],
+        "inputFields" : {
+          "fieldList" : [
+            {
+              "name" : "Formatted_Address_Lines_1",
+              "platformType" : {
+                "name" : "string"
+              },
+              "precision" : 128,
+              "scale" : 0
+            },
+            {
+              "name" : "Country",
+              "platformType" : {
+                "name" : "string"
+              },
+              "precision" : 50,
+              "scale" : 0
+            }
+          ]
+        },
+        "outputFields" : {
+          "fieldList" : [
+            {
+              "name" : "Country_Name_1",
+              "platformType" : {
+                "name" : "string"
+              },
+              "precision" : 50,
+              "scale" : 0
+            },
+            {
+              "name" : "Formatted_Address_Lines_1",
+              "platformType" : {
+                "name" : "string"
+              },
+              "precision" : 128,
+              "scale" : 0
+            },
+            {
+              "name" : "Verification_Status_Code",
+              "platformType" : {
+                "name" : "string"
+              },
+              "precision" : 4,
+              "scale" : 0
+            },
+            {
+              "name" : "Match_Percentage",
+              "platformType" : {
+                "name" : "string"
+              },
+              "precision" : 12,
+              "scale" : 0
+            },
+            {
+              "name" : "Arrival_Point_Accuracy_Code",
+              "platformType" : {
+                "name" : "string"
+              },
+              "precision" : 20,
+              "scale" : 0
+            },
+            {
+              "name" : "Arrival_Point_Coordinates",
+              "platformType" : {
+                "name" : "string"
+              },
+              "precision" : 60,
+              "scale" : 0
+            },
+            {
+              "name" : "Arrival_Point_Latitude",
+              "platformType" : {
+                "name" : "string"
+              },
+              "precision" : 30,
+              "scale" : 0
+            },
+            {
+              "name" : "Arrival_Point_Longitude",
+              "platformType" : {
+                "name" : "string"
+              },
+              "precision" : 30,
+              "scale" : 0
+            }
+          ]
+        }
+      },
+      {
+        "createTime" : "2020-08-25T13:09:54.600Z",
+        "name" : "Parse",
+        "advancedProperties" : [
+          {
+            "name" : "version",
+            "value" : "R35"
+          }
+        ],
+        "groups" : [
+          {
+            "input" : "true",
+            "name" : "Input group:",
+            "output" : "false",
+            "rules" : [
+              {
+                "bulkRename" : "false",
+                "include" : "true"
+              }
+            ]
+          },
+          {
+            "input" : "false",
+            "name" : "MappletOutputTx_Output",
+            "output" : "true"
+          }
+        ],
+        "assetId" : "@a75lmAs5lVzcrSVJPNrQc4",
+        "inputGroups" : [
+          {
+            "name" : "Input group:",
+            "fieldMappingMode" : "MANUAL",
+            "fieldMapping" : {
+              "fields" : [
+                {
+                  "name" : "Address_Line1_Address_Line2_Address_Line3_City",
+                  "precision" : 0,
+                  "scale" : 0,
+                  "txField" : {
+                    "name" : "dq_zdt_Parse"
+                  }
+                }
+              ]
+            }
+          }
+        ],
+        "inputFields" : {
+          "fieldList" : [
+            {
+              "name" : "dq_zdt_Parse",
+              "platformType" : {
+                "name" : "string"
+              },
+              "precision" : 40,
+              "scale" : 0
+            }
+          ]
+        },
+        "outputFields" : {
+          "fieldList" : [
+            {
+              "name" : "Longitude",
+              "platformType" : {
+                "name" : "string"
+              },
+              "precision" : 40,
+              "scale" : 0
+            },
+            {
+              "name" : "Overflow",
+              "platformType" : {
+                "name" : "string"
+              },
+              "precision" : 40,
+              "scale" : 0
+            },
+            {
+              "name" : "Unparsed",
+              "platformType" : {
+                "name" : "string"
+              },
+              "precision" : 40,
+              "scale" : 0
+            }
+          ]
+        }
+      },
+      {
+        "createTime" : "2020-08-25T13:10:02.799Z",
+        "name" : "Deduplicate",
+        "advancedProperties" : [
+          {
+            "name" : "version",
+            "value" : "R35"
+          }
+        ],
+        "groups" : [
+          {
+            "input" : "true",
+            "name" : "Input group:",
+            "output" : "false",
+            "rules" : [
+              {
+                "bulkRename" : "false",
+                "include" : "true"
+              }
+            ]
+          },
+          {
+            "input" : "false",
+            "name" : "MappletOutputTx_Output",
+            "output" : "true"
+          }
+        ],
+        "assetId" : "@4IfMViFReqXd37KDagf0oy",
+        "inputGroups" : [
+          {
+            "name" : "Input group:",
+            "fieldMappingMode" : "MANUAL",
+            "fieldMapping" : {
+              "fields" : [
+                {
+                  "name" : "Longitude",
+                  "precision" : 0,
+                  "scale" : 0,
+                  "txField" : {
+                    "name" : "SequenceId"
+                  }
+                },
+                {
+                  "name" : "Overflow",
+                  "precision" : 0,
+                  "scale" : 0,
+                  "txField" : {
+                    "name" : "GroupKey"
+                  }
+                },
+                {
+                  "name" : "Unparsed",
+                  "precision" : 0,
+                  "scale" : 0,
+                  "txField" : {
+                    "name" : "Id"
+                  }
+                },
+                {
+                  "name" : "Overflow",
+                  "precision" : 0,
+                  "scale" : 0,
+                  "txField" : {
+                    "name" : "Date"
+                  }
+                },
+                {
+                  "name" : "Longitude",
+                  "precision" : 0,
+                  "scale" : 0,
+                  "txField" : {
+                    "name" : "Person_Name"
+                  }
+                },
+                {
+                  "name" : "Unparsed",
+                  "precision" : 0,
+                  "scale" : 0,
+                  "txField" : {
+                    "name" : "Code"
+                  }
+                }
+              ]
+            }
+          }
+        ],
+        "inputFields" : {
+          "fieldList" : [
+            {
+              "name" : "SequenceId",
+              "platformType" : {
+                "name" : "bigint"
+              },
+              "precision" : 19,
+              "scale" : 0,
+              "fieldConstraint" : "OPTIONAL"
+            },
+            {
+              "name" : "GroupKey",
+              "platformType" : {
+                "name" : "string"
+              },
+              "precision" : 30,
+              "scale" : 0,
+              "fieldConstraint" : "MANDATORY"
+            },
+            {
+              "name" : "Id",
+              "platformType" : {
+                "name" : "string"
+              },
+              "precision" : 80,
+              "scale" : 0,
+              "fieldConstraint" : "REQUIRED"
+            },
+            {
+              "name" : "Date",
+              "platformType" : {
+                "name" : "string"
+              },
+              "precision" : 80,
+              "scale" : 0,
+              "fieldConstraint" : "REQUIRED"
+            },
+            {
+              "name" : "Person_Name",
+              "platformType" : {
+                "name" : "string"
+              },
+              "precision" : 80,
+              "scale" : 0,
+              "fieldConstraint" : "MANDATORY"
+            },
+            {
+              "name" : "Attribute1",
+              "platformType" : {
+                "name" : "string"
+              },
+              "precision" : 80,
+              "scale" : 0,
+              "fieldConstraint" : "OPTIONAL"
+            },
+            {
+              "name" : "Attribute2",
+              "platformType" : {
+                "name" : "string"
+              },
+              "precision" : 80,
+              "scale" : 0,
+              "fieldConstraint" : "OPTIONAL"
+            },
+            {
+              "name" : "Code",
+              "platformType" : {
+                "name" : "string"
+              },
+              "precision" : 80,
+              "scale" : 0,
+              "fieldConstraint" : "OPTIONAL"
+            }
+          ]
+        },
+        "outputFields" : {
+          "fieldList" : [
+            {
+              "name" : "Out_ClusterId",
+              "platformType" : {
+                "name" : "string"
+              },
+              "precision" : 30,
+              "scale" : 0
+            },
+            {
+              "name" : "Out_ClusterSize",
+              "platformType" : {
+                "name" : "integer"
+              },
+              "precision" : 10,
+              "scale" : 0
+            },
+            {
+              "name" : "Out_RowId",
+              "platformType" : {
+                "name" : "string"
+              },
+              "precision" : 25,
+              "scale" : 0
+            },
+            {
+              "name" : "Out_DriverId",
+              "platformType" : {
+                "name" : "string"
+              },
+              "precision" : 25,
+              "scale" : 0
+            },
+            {
+              "name" : "Out_DriverScore",
+              "platformType" : {
+                "name" : "double"
+              },
+              "precision" : 15,
+              "scale" : 2
+            },
+            {
+              "name" : "Out_LinkId",
+              "platformType" : {
+                "name" : "string"
+              },
+              "precision" : 25,
+              "scale" : 0
+            },
+            {
+              "name" : "Out_LinkScore",
+              "platformType" : {
+                "name" : "double"
+              },
+              "precision" : 15,
+              "scale" : 2
+            },
+            {
+              "name" : "Out_Id",
+              "platformType" : {
+                "name" : "string"
+              },
+              "precision" : 80,
+              "scale" : 0
+            },
+            {
+              "name" : "Out_Date",
+              "platformType" : {
+                "name" : "string"
+              },
+              "precision" : 80,
+              "scale" : 0
+            },
+            {
+              "name" : "Out_Person_Name",
+              "platformType" : {
+                "name" : "string"
+              },
+              "precision" : 80,
+              "scale" : 0
+            },
+            {
+              "name" : "Out_Attribute1",
+              "platformType" : {
+                "name" : "string"
+              },
+              "precision" : 80,
+              "scale" : 0
+            },
+            {
+              "name" : "Out_Attribute2",
+              "platformType" : {
+                "name" : "string"
+              },
+              "precision" : 80,
+              "scale" : 0
+            },
+            {
+              "name" : "Out_Code",
+              "platformType" : {
+                "name" : "string"
+              },
+              "precision" : 80,
+              "scale" : 0
+            },
+            {
+              "name" : "Out_IsSurvivor",
+              "platformType" : {
+                "name" : "string"
+              },
+              "precision" : 80,
+              "scale" : 0
+            }
+          ]
+        }
+      },
+      {
+        "createTime" : "2021-08-19T20:03:21.369Z",
+        "name" : "Labeler",
+        "advancedProperties" : [
+          {
+            "name" : "version",
+            "value" : "R37"
+          }
+        ],
+        "groups" : [
+          {
+            "input" : "true",
+            "name" : "Input group:",
+            "output" : "false",
+            "rules" : [
+              {
+                "bulkRename" : "false",
+                "include" : "true"
+              }
+            ]
+          },
+          {
+            "input" : "false",
+            "name" : "MappletOutputTx_Output",
+            "output" : "true"
+          }
+        ],
+        "assetId" : "@2rUuZsOdfqjgMSLeU3gHsN",
+        "inputGroups" : [
+          {
+            "name" : "Input group:",
+            "fieldMappingMode" : "MANUAL",
+            "fieldMapping" : {
+              "fields" : [
+                {
+                  "name" : "PrimaryRuleSet",
+                  "precision" : 0,
+                  "scale" : 0,
+                  "txField" : {
+                    "name" : "dq_zdt_Labeler"
+                  }
+                }
+              ]
+            }
+          }
+        ],
+        "inputFields" : {
+          "fieldList" : [
+            {
+              "name" : "dq_zdt_Labeler",
+              "platformType" : {
+                "name" : "string"
+              },
+              "precision" : 255,
+              "scale" : 0
+            }
+          ]
+        },
+        "outputFields" : {
+          "fieldList" : [
+            {
+              "name" : "LabeledOutput",
+              "platformType" : {
+                "name" : "string"
+              },
+              "precision" : 255,
+              "scale" : 0
+            },
+            {
+              "name" : "TokenizedData",
+              "platformType" : {
+                "name" : "string"
+              },
+              "precision" : 255,
+              "scale" : 0
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "vcsExportTime" : "2025-05-26 01:43:18 PDT"
+}
