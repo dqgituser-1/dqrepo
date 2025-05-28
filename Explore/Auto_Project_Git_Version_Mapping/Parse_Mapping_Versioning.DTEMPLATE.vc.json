@@ -269,7 +269,7 @@
             "output" : "true"
           }
         ],
-        "assetId" : "@9mJVEBe4nEZcJNgL15EZwk",
+        "assetId" : "@i8lbabFe4ezf5iN1jvZ6k7",
         "inputGroups" : [
           {
             "name" : "Input group:",
@@ -281,7 +281,7 @@
                   "precision" : 0,
                   "scale" : 0,
                   "txField" : {
-                    "name" : "parse_email_9517"
+                    "name" : "Parse_9646"
                   }
                 }
               ]
@@ -291,7 +291,7 @@
         "inputFields" : {
           "fieldList" : [
             {
-              "name" : "parse_email_9517",
+              "name" : "Parse_9646",
               "platformType" : {
                 "name" : "string"
               },
@@ -303,15 +303,7 @@
         "outputFields" : {
           "fieldList" : [
             {
-              "name" : "Regex_output",
-              "platformType" : {
-                "name" : "string"
-              },
-              "precision" : 40,
-              "scale" : 0
-            },
-            {
-              "name" : "Regex_output2",
+              "name" : "any_string",
               "platformType" : {
                 "name" : "string"
               },
@@ -339,5 +331,5 @@
       }
     ]
   },
-  "vcsExportTime" : "2025-05-15 02:56:33 PDT"
+  "vcsExportTime" : "2025-05-28 00:34:05 PDT"
 }

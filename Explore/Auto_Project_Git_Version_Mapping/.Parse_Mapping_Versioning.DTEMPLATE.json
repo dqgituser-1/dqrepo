@@ -23,7 +23,7 @@
     }
   },
   "dataFileExtension" : "zip",
-  "updateTime" : "2025-05-15T09:56:33.568Z",
+  "updateTime" : "2025-05-28T07:34:06.224Z",
   "objectRefs" : [ {
     "id" : "cIk6JFoqm4YjXkY6q6rqSv",
     "name" : "parse_source_connection",
@@ -45,8 +45,8 @@
     },
     "path" : "/SYS"
   }, {
-    "id" : "9mJVEBe4nEZcJNgL15EZwk",
-    "name" : "parse_email_9517",
+    "id" : "i8lbabFe4ezf5iN1jvZ6k7",
+    "name" : "Parse_9646",
     "type" : "PARSE",
     "metadata" : {
       "modelVersion" : {
@@ -54,11 +54,11 @@
         "minor" : 0
       },
       "repoInfo" : {
-        "repoHandle" : "9mJVEBe4nEZcJNgL15EZwk"
+        "repoHandle" : "i8lbabFe4ezf5iN1jvZ6k7"
       },
       "contextAttributes" : null,
       "additionalInfo" : {
-        "description" : "parsing email",
+        "description" : null,
         "contentType" : "Binary",
         "documentState" : "VALID"
       }
