@@ -15,12 +15,12 @@
       "additionalInfo" : {
         "description" : "Verifier_Versioning_Discrete",
         "contentType" : "Binary",
-        "documentState" : "VALID"
+        "documentState" : "INVALID"
       }
     }
   },
   "dataFileExtension" : "json",
-  "updateTime" : "2025-05-20T10:03:56.318Z",
+  "updateTime" : "2025-05-28T07:23:08.020Z",
   "objectRefs" : [ ],
   "readableFileExtension" : null,
   "readableFilePresent" : false
