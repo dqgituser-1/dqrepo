@@ -1,0 +1,47 @@
+{
+  "objectInfo" : {
+    "id" : "0Wy0t75IdkVihLF58Onao1",
+    "name" : "Cleanse_TC003",
+    "type" : "CLEANSE",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 1,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "0Wy0t75IdkVihLF58Onao1"
+      },
+      "contextAttributes" : [ ],
+      "additionalInfo" : {
+        "description" : "Remove dictionary values",
+        "contentType" : "Binary",
+        "documentState" : "VALID"
+      }
+    }
+  },
+  "dataFileExtension" : "json",
+  "updateTime" : "2025-05-28T07:05:45.303Z",
+  "objectRefs" : [ {
+    "id" : "lvhgOqfrraQiO6LaxhIIys",
+    "name" : "Dictionary_Cleanse_TC03",
+    "type" : "DICTIONARY",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 1,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "lvhgOqfrraQiO6LaxhIIys"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : "example&&&!!!!",
+        "contentType" : "Binary",
+        "documentState" : "VALID"
+      }
+    },
+    "path" : "/Explore/Auto_Project_Git_Version/Folder2"
+  } ],
+  "readableFileExtension" : null,
+  "readableFilePresent" : false
+}
