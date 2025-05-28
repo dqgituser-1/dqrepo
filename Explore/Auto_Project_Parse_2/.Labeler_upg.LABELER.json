@@ -1,0 +1,27 @@
+{
+  "objectInfo" : {
+    "id" : "3FsOYUQHIqIhI8JckMqVMO",
+    "name" : "Labeler_upg",
+    "type" : "LABELER",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 1,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "3FsOYUQHIqIhI8JckMqVMO"
+      },
+      "contextAttributes" : [ ],
+      "additionalInfo" : {
+        "description" : null,
+        "contentType" : "Binary",
+        "documentState" : "VALID"
+      }
+    }
+  },
+  "dataFileExtension" : "json",
+  "updateTime" : "2025-05-28T09:05:13.494Z",
+  "objectRefs" : [ ],
+  "readableFileExtension" : null,
+  "readableFilePresent" : false
+}
