@@ -20,8 +20,28 @@
     }
   },
   "dataFileExtension" : "json",
-  "updateTime" : "2025-05-28T09:05:13.494Z",
-  "objectRefs" : [ ],
+  "updateTime" : "2025-05-28T09:10:36.629Z",
+  "objectRefs" : [ {
+    "id" : "22PLwxKtFVHgAZBQZWMvwP",
+    "name" : "Dictionary_Cleanse_TC03",
+    "type" : "DICTIONARY",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 1,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "22PLwxKtFVHgAZBQZWMvwP"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : "example&&&!!!!",
+        "contentType" : "Binary",
+        "documentState" : "VALID"
+      }
+    },
+    "path" : "/Explore/Auto_Project_Git_Version/Folder2"
+  } ],
   "readableFileExtension" : null,
   "readableFilePresent" : false
 }
