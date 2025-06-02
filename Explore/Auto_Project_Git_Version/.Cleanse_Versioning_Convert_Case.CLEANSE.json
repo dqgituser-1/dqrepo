@@ -1,6 +1,6 @@
 {
   "objectInfo" : {
-    "id" : "5kqgxfhzSUwhqLDU4L34Um",
+    "id" : "3aNFpElXf9GiM5ORw4VaOe",
     "name" : "Cleanse_Versioning_Convert_Case",
     "type" : "CLEANSE",
     "metadata" : {
@@ -9,18 +9,18 @@
         "minor" : 0
       },
       "repoInfo" : {
-        "repoHandle" : "5kqgxfhzSUwhqLDU4L34Um"
+        "repoHandle" : "3aNFpElXf9GiM5ORw4VaOe"
       },
       "contextAttributes" : [ ],
       "additionalInfo" : {
-        "description" : "desc change",
+        "description" : null,
         "contentType" : "Binary",
-        "documentState" : "INVALID"
+        "documentState" : "VALID"
       }
     }
   },
   "dataFileExtension" : "json",
-  "updateTime" : "2025-05-20T09:33:12.525Z",
+  "updateTime" : "2025-06-02T06:41:15.516Z",
   "objectRefs" : [ ],
   "readableFileExtension" : null,
   "readableFilePresent" : false
