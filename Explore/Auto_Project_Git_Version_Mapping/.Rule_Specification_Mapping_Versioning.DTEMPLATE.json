@@ -1,6 +1,6 @@
 {
   "objectInfo" : {
-    "id" : "5o5WVrACqvVeRcqzdCDrYq",
+    "id" : "lMWxFcGvk2rgy7INMSgBWk",
     "name" : "Rule_Specification_Mapping_Versioning",
     "type" : "DTEMPLATE",
     "metadata" : {
@@ -9,21 +9,21 @@
         "minor" : 0
       },
       "repoInfo" : {
-        "repoHandle" : "0183RG1700000000001J"
+        "repoHandle" : "0183RG1700000000001W"
       },
       "contextAttributes" : [ {
         "name" : "id",
         "value" : "@1"
       } ],
       "additionalInfo" : {
-        "description" : "A simple mapping using rule specification test desc change",
+        "description" : "A simple mapping using rule specification",
         "contentType" : "JSON",
         "documentState" : "VALID"
       }
     }
   },
   "dataFileExtension" : "zip",
-  "updateTime" : "2025-03-25T11:52:10.980Z",
+  "updateTime" : "2025-06-16T07:16:15.961Z",
   "objectRefs" : [ {
     "id" : "1k8Ak4MgF4Kjiw23ZQuF01",
     "name" : "source_connection",
@@ -65,7 +65,7 @@
     },
     "path" : "/SYS"
   }, {
-    "id" : "46DgIQtwv1mhiQOvhMMBq3",
+    "id" : "8i8FFhNITrvfgPT3RPNm8E",
     "name" : "parent rule",
     "type" : "RULE_SPECIFICATION",
     "metadata" : {
@@ -74,7 +74,7 @@
         "minor" : 0
       },
       "repoInfo" : {
-        "repoHandle" : "46DgIQtwv1mhiQOvhMMBq3"
+        "repoHandle" : "8i8FFhNITrvfgPT3RPNm8E"
       },
       "contextAttributes" : null,
       "additionalInfo" : {
