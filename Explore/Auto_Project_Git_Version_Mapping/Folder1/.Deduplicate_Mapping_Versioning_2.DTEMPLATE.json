@@ -1,6 +1,6 @@
 {
   "objectInfo" : {
-    "id" : "1X1svcJsfmWb2m9o7dGnga",
+    "id" : "0ujlwWsIAqdbC0oCpwPbk8",
     "name" : "Deduplicate_Mapping_Versioning_2",
     "type" : "DTEMPLATE",
     "metadata" : {
@@ -9,7 +9,7 @@
         "minor" : 0
       },
       "repoInfo" : {
-        "repoHandle" : "0183RG1700000000001H"
+        "repoHandle" : "0183RG1700000000001R"
       },
       "contextAttributes" : [ {
         "name" : "id",
@@ -23,7 +23,7 @@
     }
   },
   "dataFileExtension" : "zip",
-  "updateTime" : "2025-02-11T08:37:20.385Z",
+  "updateTime" : "2025-06-16T07:17:56.442Z",
   "objectRefs" : [ {
     "id" : "j3RVoW3aH6GduDF907oo4e",
     "name" : "Deduplicate_source_connection",
@@ -45,26 +45,6 @@
     },
     "path" : "/SYS"
   }, {
-    "id" : "aqrEqMP1ikEg1x6SmY2W2w",
-    "name" : "Deduplicate_9646",
-    "type" : "DEDUPLICATE",
-    "metadata" : {
-      "modelVersion" : {
-        "major" : 1,
-        "minor" : 0
-      },
-      "repoInfo" : {
-        "repoHandle" : "aqrEqMP1ikEg1x6SmY2W2w"
-      },
-      "contextAttributes" : null,
-      "additionalInfo" : {
-        "description" : "dedup test to resync in CMD",
-        "contentType" : "Binary",
-        "documentState" : "VALID"
-      }
-    },
-    "path" : "/Explore/Auto_Project_Git_Version/Folder2"
-  }, {
     "id" : "l2hnIB4FwQkivsRRlPIwwz",
     "name" : "Deduplicate_target_connection",
     "type" : "Connection",
@@ -84,6 +64,26 @@
       }
     },
     "path" : "/SYS"
+  }, {
+    "id" : "8piGrc3vcjzdJK0c6kGdEr",
+    "name" : "Deduplicate_9646",
+    "type" : "DEDUPLICATE",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 1,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "8piGrc3vcjzdJK0c6kGdEr"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : "dedup test to resync in CMD",
+        "contentType" : "Binary",
+        "documentState" : "VALID"
+      }
+    },
+    "path" : "/Explore/Auto_Project_Git_Version/Folder2"
   } ],
   "readableFileExtension" : "json",
   "readableFilePresent" : true

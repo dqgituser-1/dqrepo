@@ -2,6 +2,7 @@
   "content" : {
     "allowMaxFieldLength" : "false",
     "name" : "Parse_Mapping_Versioning_2",
+    "specialCharacterSupport" : "false",
     "links" : [
       {
         "link" : "Parse -> Target",
@@ -83,6 +84,7 @@
               "delimiter" : ",",
               "firstDataRow" : 2,
               "firstDataRowAsHeader" : "false",
+              "headerAndDataDelimiter" : 0,
               "headerLineNo" : 1,
               "multiDelimitersAsAnd" : "true",
               "rowDelimiter" : 0,
@@ -169,6 +171,7 @@
               "delimiter" : ",",
               "firstDataRow" : 2,
               "firstDataRowAsHeader" : "false",
+              "headerAndDataDelimiter" : 0,
               "headerLineNo" : 1,
               "multiDelimitersAsAnd" : "true",
               "rowDelimiter" : 0,
@@ -212,7 +215,7 @@
             "output" : "true"
           }
         ],
-        "assetId" : "@i8lbabFe4ezf5iN1jvZ6k7",
+        "assetId" : "@4PAm1XtGFk7ey98EzJhvup",
         "inputGroups" : [
           {
             "name" : "Input group:",
@@ -274,5 +277,5 @@
       }
     ]
   },
-  "vcsExportTime" : "2025-02-11 00:37:20 PST"
+  "vcsExportTime" : "2025-06-16 00:17:55 PDT"
 }

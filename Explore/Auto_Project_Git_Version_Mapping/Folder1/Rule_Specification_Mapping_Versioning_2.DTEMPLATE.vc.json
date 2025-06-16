@@ -3,6 +3,7 @@
     "description" : "A simple mapping using rule specification",
     "allowMaxFieldLength" : "false",
     "name" : "Rule_Specification_Mapping_Versioning_2",
+    "specialCharacterSupport" : "false",
     "links" : [
       {
         "link" : "Source -> RuleSpecification",
@@ -110,6 +111,7 @@
               "delimiter" : ",",
               "firstDataRow" : 2,
               "firstDataRowAsHeader" : "false",
+              "headerAndDataDelimiter" : 0,
               "headerLineNo" : 1,
               "multiDelimitersAsAnd" : "true",
               "rowDelimiter" : 0,
@@ -128,12 +130,6 @@
       {
         "createTime" : "2019-06-03T18:22:40.988Z",
         "name" : "RuleSpecification",
-        "advancedProperties" : [
-          {
-            "name" : "version",
-            "value" : "R37"
-          }
-        ],
         "groups" : [
           {
             "input" : "true",
@@ -152,8 +148,8 @@
             "output" : "true"
           }
         ],
-        "documentId" : "@46DgIQtwv1mhiQOvhMMBq3",
-        "ruleId" : "@46DgIQtwv1mhiQOvhMMBq3",
+        "documentId" : "@8i8FFhNITrvfgPT3RPNm8E",
+        "ruleId" : "@8i8FFhNITrvfgPT3RPNm8E",
         "inputGroups" : [
           {
             "name" : "MappletInputTx_Input",
@@ -264,6 +260,7 @@
               "delimiter" : ",",
               "firstDataRow" : 2,
               "firstDataRowAsHeader" : "false",
+              "headerAndDataDelimiter" : 0,
               "headerLineNo" : 1,
               "multiDelimitersAsAnd" : "true",
               "rowDelimiter" : 0,
@@ -288,5 +285,5 @@
       }
     ]
   },
-  "vcsExportTime" : "2025-02-11 00:37:20 PST"
+  "vcsExportTime" : "2025-06-16 00:17:55 PDT"
 }
