@@ -1,6 +1,6 @@
 {
   "objectInfo" : {
-    "id" : "46DgIQtwv1mhiQOvhMMBq3",
+    "id" : "8i8FFhNITrvfgPT3RPNm8E",
     "name" : "parent rule",
     "type" : "RULE_SPECIFICATION",
     "metadata" : {
@@ -9,7 +9,7 @@
         "minor" : 0
       },
       "repoInfo" : {
-        "repoHandle" : "46DgIQtwv1mhiQOvhMMBq3"
+        "repoHandle" : "8i8FFhNITrvfgPT3RPNm8E"
       },
       "contextAttributes" : [ ],
       "additionalInfo" : {
@@ -20,29 +20,9 @@
     }
   },
   "dataFileExtension" : "json",
-  "updateTime" : "2025-02-11T07:06:57.238Z",
+  "updateTime" : "2025-06-16T06:39:57.041Z",
   "objectRefs" : [ {
-    "id" : "7EA3T8jWPuWk6Uh9PFTSWG",
-    "name" : "child rule",
-    "type" : "RULE_SPECIFICATION",
-    "metadata" : {
-      "modelVersion" : {
-        "major" : 1,
-        "minor" : 0
-      },
-      "repoInfo" : {
-        "repoHandle" : "7EA3T8jWPuWk6Uh9PFTSWG"
-      },
-      "contextAttributes" : null,
-      "additionalInfo" : {
-        "description" : "child rule",
-        "contentType" : "Binary",
-        "documentState" : "VALID"
-      }
-    },
-    "path" : "/Explore/Auto_Project_Git_Version/Folder2"
-  }, {
-    "id" : "9Q3xOk3PQ2zkLqOeCiioqv",
+    "id" : "5NyXKJ6MkxakOECu7ugggT",
     "name" : "ror_dictionary2",
     "type" : "DICTIONARY",
     "metadata" : {
@@ -51,11 +31,31 @@
         "minor" : 0
       },
       "repoInfo" : {
-        "repoHandle" : "9Q3xOk3PQ2zkLqOeCiioqv"
+        "repoHandle" : "5NyXKJ6MkxakOECu7ugggT"
       },
       "contextAttributes" : null,
       "additionalInfo" : {
         "description" : "example&&&!!!!",
+        "contentType" : "Binary",
+        "documentState" : "VALID"
+      }
+    },
+    "path" : "/Explore/Auto_Project_Git_Version/Folder2"
+  }, {
+    "id" : "4di6j3lqmd5jfF4lAchea5",
+    "name" : "child rule",
+    "type" : "RULE_SPECIFICATION",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 1,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "4di6j3lqmd5jfF4lAchea5"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : "child rule",
         "contentType" : "Binary",
         "documentState" : "VALID"
       }
