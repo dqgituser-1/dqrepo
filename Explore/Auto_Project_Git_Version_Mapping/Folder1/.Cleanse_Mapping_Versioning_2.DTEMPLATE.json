@@ -1,6 +1,6 @@
 {
   "objectInfo" : {
-    "id" : "5klSrUp7lM3fHXAvsZiqMI",
+    "id" : "44wIpTd6oPSjdJPVxoOfww",
     "name" : "Cleanse_Mapping_Versioning_2",
     "type" : "DTEMPLATE",
     "metadata" : {
@@ -9,7 +9,7 @@
         "minor" : 0
       },
       "repoInfo" : {
-        "repoHandle" : "0183RG1700000000001G"
+        "repoHandle" : "0183RG1700000000001U"
       },
       "contextAttributes" : [ {
         "name" : "id",
@@ -23,7 +23,7 @@
     }
   },
   "dataFileExtension" : "zip",
-  "updateTime" : "2025-05-07T06:40:47.996Z",
+  "updateTime" : "2025-06-16T07:17:34.133Z",
   "objectRefs" : [ {
     "id" : "0ImslthRCXajrIqXSdrgWz",
     "name" : "cleanse_target_connection",
@@ -45,26 +45,6 @@
     },
     "path" : "/SYS"
   }, {
-    "id" : "2MzXWolf5Zbfya4eWWRMCW",
-    "name" : "Parse_Versioning_Dict",
-    "type" : "PARSE",
-    "metadata" : {
-      "modelVersion" : {
-        "major" : 1,
-        "minor" : 0
-      },
-      "repoInfo" : {
-        "repoHandle" : "2MzXWolf5Zbfya4eWWRMCW"
-      },
-      "contextAttributes" : null,
-      "additionalInfo" : {
-        "description" : null,
-        "contentType" : "Binary",
-        "documentState" : "VALID"
-      }
-    },
-    "path" : "/Explore/Auto_Project_Git_Version"
-  }, {
     "id" : "2IC7jncljhLliFiKegZtEK",
     "name" : "cleanse_source_connection",
     "type" : "Connection",
@@ -84,6 +64,26 @@
       }
     },
     "path" : "/SYS"
+  }, {
+    "id" : "04s7vbjlLNggHKsIelShkx",
+    "name" : "Cleanse_TC003",
+    "type" : "CLEANSE",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 1,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "04s7vbjlLNggHKsIelShkx"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : "Remove dictionary values",
+        "contentType" : "Binary",
+        "documentState" : "VALID"
+      }
+    },
+    "path" : "/Explore/Auto_Project_Git_Version/Folder2"
   } ],
   "readableFileExtension" : "json",
   "readableFilePresent" : true
