@@ -3,6 +3,7 @@
     "description" : "Cleanse mapping",
     "allowMaxFieldLength" : "false",
     "name" : "Cleanse_Mapping_Versioning",
+    "specialCharacterSupport" : "false",
     "links" : [
       {
         "link" : "Source -> Cleanse",
@@ -98,6 +99,7 @@
               "delimiter" : ",",
               "firstDataRow" : 2,
               "firstDataRowAsHeader" : "false",
+              "headerAndDataDelimiter" : 0,
               "headerLineNo" : 1,
               "multiDelimitersAsAnd" : "true",
               "rowDelimiter" : 0,
@@ -184,6 +186,7 @@
               "delimiter" : ",",
               "firstDataRow" : 2,
               "firstDataRowAsHeader" : "false",
+              "headerAndDataDelimiter" : 0,
               "headerLineNo" : 1,
               "multiDelimitersAsAnd" : "true",
               "rowDelimiter" : 0,
@@ -209,12 +212,6 @@
       {
         "createTime" : "2019-11-29T06:32:26.720Z",
         "name" : "Cleanse",
-        "advancedProperties" : [
-          {
-            "name" : "version",
-            "value" : "R37"
-          }
-        ],
         "groups" : [
           {
             "input" : "true",
@@ -233,17 +230,29 @@
             "output" : "true"
           }
         ],
-        "assetId" : "@2SXARNPSQj1lJYknSQ4RyZ",
+        "assetId" : "@3qRX4xVXg2DhsgMc2rx1Uj",
         "inputGroups" : [
           {
             "name" : "Input group:",
-            "fieldMappingMode" : "BY_NAME"
+            "fieldMappingMode" : "MANUAL",
+            "fieldMapping" : {
+              "fields" : [
+                {
+                  "name" : "input_field",
+                  "precision" : 0,
+                  "scale" : 0,
+                  "txField" : {
+                    "name" : "Cleanse_TC51"
+                  }
+                }
+              ]
+            }
           }
         ],
         "inputFields" : {
           "fieldList" : [
             {
-              "name" : "input_field",
+              "name" : "Cleanse_TC51",
               "platformType" : {
                 "name" : "string"
               },
@@ -255,7 +264,7 @@
         "outputFields" : {
           "fieldList" : [
             {
-              "name" : "input_field_Cleanse",
+              "name" : "Cleanse_TC51",
               "platformType" : {
                 "name" : "string"
               },
@@ -267,5 +276,5 @@
       }
     ]
   },
-  "vcsExportTime" : "2025-02-11 00:33:14 PST"
+  "vcsExportTime" : "2025-06-16 00:15:59 PDT"
 }
