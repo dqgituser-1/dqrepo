@@ -3,6 +3,7 @@
     "description" : "Dedupe mapping",
     "allowMaxFieldLength" : "false",
     "name" : "Deduplicate_Mapping_Versioning",
+    "specialCharacterSupport" : "false",
     "links" : [
       {
         "link" : "Deduplicate -> Target",
@@ -188,6 +189,7 @@
               "delimiter" : ",",
               "firstDataRow" : 2,
               "firstDataRowAsHeader" : "false",
+              "headerAndDataDelimiter" : 0,
               "headerLineNo" : 1,
               "multiDelimitersAsAnd" : "true",
               "rowDelimiter" : 0,
@@ -274,6 +276,7 @@
               "delimiter" : ",",
               "firstDataRow" : 2,
               "firstDataRowAsHeader" : "false",
+              "headerAndDataDelimiter" : 0,
               "headerLineNo" : 1,
               "multiDelimitersAsAnd" : "true",
               "rowDelimiter" : 0,
@@ -317,7 +320,7 @@
             "output" : "true"
           }
         ],
-        "assetId" : "@9TsHIzEOeF9hPyn6myJ0YL",
+        "assetId" : "@lXk4LRfvwKDbJxhVpTJqky",
         "inputGroups" : [
           {
             "name" : "Input group:",
@@ -598,5 +601,5 @@
       }
     ]
   },
-  "vcsExportTime" : "2025-02-11 00:35:25 PST"
+  "vcsExportTime" : "2025-06-16 00:16:32 PDT"
 }
