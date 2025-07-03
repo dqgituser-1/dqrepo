@@ -1,0 +1,27 @@
+{
+  "objectInfo" : {
+    "id" : "14csRKMwpB1f0Jo7L2llac",
+    "name" : "Cleanse_versioned",
+    "type" : "CLEANSE",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 1,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "14csRKMwpB1f0Jo7L2llac"
+      },
+      "contextAttributes" : [ ],
+      "additionalInfo" : {
+        "description" : "Cleanse_versioned",
+        "contentType" : "Binary",
+        "documentState" : "VALID"
+      }
+    }
+  },
+  "dataFileExtension" : "json",
+  "updateTime" : "2025-07-03T06:20:42.676Z",
+  "objectRefs" : [ ],
+  "readableFileExtension" : null,
+  "readableFilePresent" : false
+}
