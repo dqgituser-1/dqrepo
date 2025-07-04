@@ -1,0 +1,27 @@
+{
+  "objectInfo" : {
+    "id" : "4Y8CA0eLXC9fRwMHcRfBSR",
+    "name" : "Parse_Versioning_Regular_Exp",
+    "type" : "PARSE",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 1,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "4Y8CA0eLXC9fRwMHcRfBSR"
+      },
+      "contextAttributes" : [ ],
+      "additionalInfo" : {
+        "description" : "Parse_Versioning_Regular_Exp",
+        "contentType" : "Binary",
+        "documentState" : "VALID"
+      }
+    }
+  },
+  "dataFileExtension" : "json",
+  "updateTime" : "2025-07-04T08:10:27.605Z",
+  "objectRefs" : [ ],
+  "readableFileExtension" : null,
+  "readableFilePresent" : false
+}
