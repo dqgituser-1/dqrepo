@@ -1,0 +1,27 @@
+{
+  "objectInfo" : {
+    "id" : "2MCJ1dB4RMfeQxQ5xeWYK8",
+    "name" : "Dictionary2_Project_Versioning",
+    "type" : "DICTIONARY",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 1,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "2MCJ1dB4RMfeQxQ5xeWYK8"
+      },
+      "contextAttributes" : [ ],
+      "additionalInfo" : {
+        "description" : null,
+        "contentType" : "Binary",
+        "documentState" : "VALID"
+      }
+    }
+  },
+  "dataFileExtension" : "json",
+  "updateTime" : "2025-07-07T06:55:17.249Z",
+  "objectRefs" : [ ],
+  "readableFileExtension" : null,
+  "readableFilePresent" : false
+}
