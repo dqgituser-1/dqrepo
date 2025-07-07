@@ -1,0 +1,27 @@
+{
+  "objectInfo" : {
+    "id" : "3BgeBpnDWT9lmVNtTA0V2t",
+    "name" : "Deduplication_Versioning_2",
+    "type" : "DEDUPLICATE",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 1,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "3BgeBpnDWT9lmVNtTA0V2t"
+      },
+      "contextAttributes" : [ ],
+      "additionalInfo" : {
+        "description" : null,
+        "contentType" : "Binary",
+        "documentState" : "VALID"
+      }
+    }
+  },
+  "dataFileExtension" : "json",
+  "updateTime" : "2025-07-07T08:14:06.946Z",
+  "objectRefs" : [ ],
+  "readableFileExtension" : null,
+  "readableFilePresent" : false
+}
